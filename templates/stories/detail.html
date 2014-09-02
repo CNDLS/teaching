@@ -1,0 +1,10 @@
+{% extends "inside.html" %}
+
+{% block page %}
+
+<h5>Faculty Stories</h5>
+<h1>{{ story.title }}</h1>
+
+{{ story.content|safe }}
+
+{% endblock %}

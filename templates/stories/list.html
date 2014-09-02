@@ -1,0 +1,10 @@
+{% extends "inside.html" %}
+
+{% block page %}
+<h1 class="page-title">Faculty Stories</h1>
+<ul>
+{% for s in stories %}
+<li><a href="{{ url_for('story', slug=s.slug) }}">{{ s.title }}</a></li>
+{% endfor %}
+</ul>
+{% endblock %}

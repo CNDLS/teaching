@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block head %}
+<style type="text/css">
+div.page-heading {
+    background-image: url('{{ url_for('static', filename='img/tc-facilitating-splash.jpg') }}');
+}
+</style>
+{% endblock %}
+
+{% block body %}
+<div class="page-heading">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-10 col-md-offset-2">
+
+                <h2 class="flat-title"><a href="{{ url_for('index') }}">The Teaching Commons</a></h2>
+
+            </div><!-- /.col-md-10 offset2 -->
+
+        </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+</div><!-- /.page-heading -->
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-2" id="handbook-nav">
+                <ul class="list-unstyled teaching-nav" data-spy="affix" data-offset-top="150" data-offset-bottom="750">
+                    <li class="nav-header"><a href="{{ url_for('page', path='design') }}">Designing a Course</a></li>
+                    {% for p in design_page_list %}
+                        <li class="nav-item{% if page.title == p.title %} active{% endif %}"><a href="{{ url_for('page', path=p.path) }}">{{ p.title }}</a></li>
+                    {% endfor %}
+
+                    <li class="nav-header"><a href="{{ url_for('page', path='teach') }}">Teaching a Course</a></li>
+                    {% for p in teach_page_list %}
+                        <li class="nav-item{% if page.title == p.title %} active{% endif %}"><a href="{{ url_for('page', path=p.path) }}">{{ p.title }}</a></li>
+                    {% endfor %}
+
+                    <li class="nav-header"><a href="{{ url_for('stories') }}">Faculty Stories</a></li>
+                    <li class="nav-header"><a href="#">Reading List</a></li>
+                    <li class="nav-header"><a href="#">Teaching Glossary</a></li>
+                    <li class="nav-header"><a href="#">Useful Resources</a></li>
+                    <li class="nav-header"><a href="#">Working with CNDLS</a></li>
+
+                </ul>
+        </div>
+
+        <div class="col-md-8 article-wrap">
+{% block page %}{% endblock %}
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
