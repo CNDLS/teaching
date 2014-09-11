@@ -1,11 +1,17 @@
 import os
-from flask import Flask, render_template
+from flask import Flask, render_template, Markup, render_template_string, url_for
 from flask.views import MethodView
-from flask_flatpages import FlatPages
+from flask_flatpages import FlatPages, pygmented_markdown
 from flaskext.mysql import MySQL
 
 # create the application
 app = Flask(__name__)
+pages = FlatPages(app)
+
+# define a custom renderer to enable url_for in flatpages
+def prerender_jinja(text):
+    prerendered_body = render_template_string(Markup(text))
+    return pygmented_markdown(prerendered_body)
 
 APP_PREFIX='/teaching/'
 app.config.update(dict(
@@ -15,9 +21,9 @@ app.config.update(dict(
     FREEZER_DESTINATION_IGNORE = ['.GIT*', 'CNAME', '.gitignore', 'readme.md'],
     FREEZER_BASE_URL = 'http://localhost' + APP_PREFIX,
     FREEZER_RELATIVE_URLS = False,
+    FLATPAGES_HTML_RENDERER = prerender_jinja,
 ))
 app.config.from_envvar('TC_SETTINGS', silent=True)
-pages = FlatPages(app)
 
 # initialize the MySQL extension
 from flaskext.mysql import MySQL
