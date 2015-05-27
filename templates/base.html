@@ -14,104 +14,20 @@
 
   <body>
 
-    <header>
-      <div id="cndls" class="container">
+    <header id="t2" class="navbar-fixed-top">
+      <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-              <div id="georgetown">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <a id="georgetown-logo" href="http://www.georgetown.edu/"><img src="{{ url_for('static', filename='img/gtlogo.png') }}" width="165" height="14" alt="Georgetown University" /></a>
-                    </div><!-- /.col -->
-                  </div><!-- /row -->
-                </div><!-- /.container -->
-              </div><!-- /#georgetown -->
-
-              <div class="container">
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand" href="#"><img src="{{ url_for('static', filename='img/logo.png') }}" width="75" height="30" alt="CNDLS" /></a>
-                </div><!-- /.navbar-header -->
-
-                <div class="collapse navbar-collapse">
-                  <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                      <a href="https://cndls.georgetown.edu/projects/" class="dropdown-toggle" data-toggle="dropdown">Projects &amp; Initiatives<span class="caret"></b></a>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="https://cndls.georgetown.edu/atprogram/">Apprenticeship in Teaching Program</a></li>
-                        <li><a href="https://cndls.georgetown.edu/bottlenecks-and-thresholds/">Bottlenecks &amp; Thresholds Initiative</a></li>   
-                        <li><a href="https://cndls.georgetown.edu/doyle/">The Doyle Program</a></li>
-                        <li><a href="https://cndls.georgetown.edu/project/engelhard/">The Engelhard Project</a></li>
-                        <li><a href="https://cndls.georgetown.edu/eportfolios/">ePortfolio Initiative</a></li>
-                        <li><a href="https://cndls.georgetown.edu/projects/georgetownx/">GeorgetownX</a></li>
-                        <li><a href="https://cndls.georgetown.edu/global-classroom/">Global Classroom</a></li>
-                        <li><a href="https://itel.georgetown.edu/">Initiative on Technology-Enhanced Learning (ITEL)</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown">
-                      <a href="https://cndls.georgetown.edu/support/" class="dropdown-toggle" data-toggle="dropdown">Teaching &amp; Technology <span class="caret"></b></a>
-                      <ul class="dropdown-menu">
-                        <li class="nav-header">Pedagogy Resources</li>
-                        <li><a href="https://commons.georgetown.edu/teaching/">The Teaching Commons</a></li>
-                        <li><a href="https://cndls.georgetown.edu/support/assessment/">Assessment Services</a></li>
-                        <li><a href="https://cndls.georgetown.edu/support/course-design/">Course &amp; Curriculum Design</a></li>
-                        <li><a href="https://cndls.georgetown.edu/newfaculty/">Resources for New Faculty</a></li>
-
-                        <li class="nav-header">Technology &amp; New Media</li>
-                        <li><a href="https://commons.georgetown.edu/tools/">Tools for Teaching &amp; Learning</a></li>
-                        <li><a href="https://wiki.uis.georgetown.edu/display/BBSUPPORT/Home">Blackboard Support</a></li>
-                        <li><a href="https://cndls.georgetown.edu/llt/">Language Learning Technology</a></li>
-                        <li><a href="http://instructionalcontinuity.georgetown.edu/">Academic Continuity</a></li>
-                        <li class="nav-header">Grants</li>
-                        <li><a href="https://cndls.georgetown.edu/grants/curriculum-enrichment-doyle/">Curriculum Enrichment &amp; Doyle Diversity Grants</a></li>
-                        <li><a href="https://itel.georgetown.edu/">ITEL Grants</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown">
-                      <a href="https://cndls.georgetown.edu/calendar/" class="dropdown-toggle" data-toggle="dropdown">Events <span class="caret"></b></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="https://cndls.georgetown.edu/tlisi/">Teaching, Learning &amp; Innovation Summer Institute (TLISI)</a></li>
-                        <li><a href="https://cndls.georgetown.edu/calendar/">Event Calendar</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="https://cndls.georgetown.edu/research/" class="dropdown-toggle">Research</a></li>
-                    <li class="dropdown">
-                      <a href="https://cndls.georgetown.edu/about/" class="dropdown-toggle" data-toggle="dropdown">About <span class="caret"></b></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="https://cndls.georgetown.edu/about/">About the Center</a></li>
-                        <li><a href="https://cndls.georgetown.edu/people/">Our Staff</a></li>
-                        <li><a href="https://cndls.georgetown.edu/about/advisory/">Faculty Advisory Board</a></li> 
-                        <li><a href="https://cndls.georgetown.edu/about/scholars/">Senior Scholars</a></li> 
-                        <li><a href="https://cndls.georgetown.edu/about/jobs/">Join the CNDLS Team</a></li>
-                        <li><a href="https://blogs.commons.georgetown.edu/cndls/">CNDLS News</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-
-                  <form class="navbar-form pull-right" action="http://search.uis.georgetown.edu/search" method="get" id="search">
-                    <input type="text" id="searchtext" name="q" class="span2" />
-                    <input type="hidden" value="default_frontend" name="client" />
-                    <input type="hidden" value="default_frontend" name="proxystylesheet" />
-                    <input type="hidden" value="xml_no_dtd" name="output" />
-                    <input type="hidden" value="description" name="getfields" />
-                    <input type="hidden" value="cndls.georgetown.edu" name="as_sitesearch" />
-                    <button type="submit" class="btn btn-xs btn-primary">Search</button>
-                  </form>
-
-                </div><!-- /.navbar-collapse -->
-              </div><!-- /container -->
-            </nav>
+          <div class="col-xs-6">
+            <a id="logo-gr" href="https://cndls.georgetown.edu/"><img src="{{ url_for('static', filename='img/logo-gr.png') }}" width="40" height="16" alt="CNDLS" /></a>
+          </div><!-- /.col -->
+          <div class="col-xs-6 text-right">
+            <a id="gt-logo" href="http://www.georgetown.edu/"><img src="{{ url_for('static', filename='img/gtlogo.png') }}" width="165" height="14" alt="Georgetown University" /></a>
           </div><!-- /.col -->
         </div><!-- /.row -->
-      </div><!-- /#cndls -->
+      </div><!-- /.container -->
     </header>
+
+    {% block secondary_nav %}{% endblock %}
 
     {% block body %}{% endblock %}
 

@@ -1,69 +1,73 @@
 {% extends "base.html" %}
 
-{% block head %}
-<style type="text/css">
-div.page-heading {
-    background-image: url('{{ url_for('static', filename='img/tc-facilitating-splash.jpg') }}');
-}
-</style>
+{% block secondary_nav %}
+<div id="secondary-nav" class="inside-top">
+  <nav class="navbar navbar-custom navbar-fixed-top top-nav-collapse" role="navigation">
+    <div class="container">
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+          <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+        </button>
+        <a class="navbar-brand" href="{{ url_for('index') }}"><h1>The Teaching Commons</h1></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+        <ul class="nav navbar-nav">
+          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+          <li class="hidden">
+            <a href="#page-top"></a>
+          </li>
+          <li class="page-scroll">
+            <a href="{{ url_for('page', path='teach') }}">Teaching Handbook</a>
+          </li>
+          <li class="page-scroll">
+            <a href="{{ url_for('page', path='resources') }}">Useful Resources</a>
+          </li>
+          <li class="page-scroll">
+            <a href="{{ url_for('page', path='stories') }}">Faculty Stories</a>
+          </li>
+          <li class="page-scroll">
+            <a href="{{ url_for('page', path='cndls') }}">Working with CNDLS</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+  </nav>
+</div>
 {% endblock %}
 
 {% block body %}
-<div class="page-heading">
-
-    <div class="container">
-
-        <div class="row">
-
-            <div class="col-md-10 col-md-offset-2">
-
-                <h2 class="flat-title"><a href="{{ url_for('index') }}">The Teaching Commons</a></h2>
-
-            </div><!-- /.col-md-10 offset2 -->
-
-        </div><!-- /.row -->
-
-    </div><!-- /.container -->
-
-</div><!-- /.page-heading -->
-
 <div class="container">
+  <div class="row">
+    <div class="col-md-3" id="handbook-nav">
+      <ul class="list-unstyled teaching-nav" data-spy="affix" data-offset-top="150" data-offset-bottom="750">
+        <li class="nav-header"><a href="{{ url_for('page', path='design') }}">Designing a Course</a></li>
+        {% for p in design_page_list %}
+            <li class="nav-item{% if page.title == p.title %} active{% endif %}"><a href="{{ url_for('page', path=p.path) }}">{{ p.title }}</a></li>
+        {% endfor %}
 
-    <div class="row">
+        <li class="nav-header"><a href="{{ url_for('page', path='teach') }}">Teaching a Course</a></li>
+        {% for p in teach_page_list %}
+            <li class="nav-item{% if page.title == p.title %} active{% endif %}"><a href="{{ url_for('page', path=p.path) }}">{{ p.title }}</a></li>
+        {% endfor %}
 
-        <div class="col-md-2" id="handbook-nav">
-                <ul class="list-unstyled teaching-nav" data-spy="affix" data-offset-top="150" data-offset-bottom="750">
-                    <li class="nav-header"><a href="{{ url_for('page', path='design') }}">Designing a Course</a></li>
-                    {% for p in design_page_list %}
-                        <li class="nav-item{% if page.title == p.title %} active{% endif %}"><a href="{{ url_for('page', path=p.path) }}">{{ p.title }}</a></li>
-                    {% endfor %}
+        <li class="nav-header"><a href="#">Reading List</a></li>
+        <li class="nav-header"><a href="{{ url_for('page', path='glossary') }}">Teaching Glossary</a></li>
+        <li class="nav-item">
+        <div class="btn-group">
+          <a href="{{ url_for('page', path='glossary') }}#a" class="btn btn-default btn-xs">A-F</a>
+          <a href="{{ url_for('page', path='glossary') }}#g" class="btn btn-default btn-xs">G-L</a>
+          <a href="{{ url_for('page', path='glossary') }}#m" class="btn btn-default btn-xs">M-R</a>
+          <a href="{{ url_for('page', path='glossary') }}#s" class="btn btn-default btn-xs">S-Z</a></div></li>
+      </ul>
+    </div><!-- /.col -->
 
-                    <li class="nav-header"><a href="{{ url_for('page', path='teach') }}">Teaching a Course</a></li>
-                    {% for p in teach_page_list %}
-                        <li class="nav-item{% if page.title == p.title %} active{% endif %}"><a href="{{ url_for('page', path=p.path) }}">{{ p.title }}</a></li>
-                    {% endfor %}
-
-                    <li class="nav-header"><a href="{{ url_for('stories') }}">Faculty Stories</a></li>
-                    <li class="nav-header"><a href="#">Reading List</a></li>
-                    <li class="nav-header"><a href="{{ url_for('page', path='glossary') }}">Teaching Glossary</a></li>
-                        <li class="nav-item">
-                        <div class="btn-group">
-                            <a href="{{ url_for('page', path='glossary') }}#a" class="btn btn-default btn-xs">A-F</a>
-                            <a href="{{ url_for('page', path='glossary') }}#g" class="btn btn-default btn-xs">G-L</a>
-                            <a href="{{ url_for('page', path='glossary') }}#m" class="btn btn-default btn-xs">M-R</a>
-                            <a href="{{ url_for('page', path='glossary') }}#s" class="btn btn-default btn-xs">S-Z</a></div></li>
-                    <li class="nav-header"><a href="#">Useful Resources</a></li>
-                    <li class="nav-header"><a href="#">Working with CNDLS</a></li>
-
-                </ul>
-        </div>
-
-        <div class="col-md-8 article-wrap">
+    <div class="col-md-8 article-wrap">
 {% block page %}{% endblock %}
-        </div>
-
-    </div>
-
-</div>
+    </div><!-- /.col -->
+  </div><!-- /.row -->
+</div><!-- /.container -->
 
 {% endblock %}

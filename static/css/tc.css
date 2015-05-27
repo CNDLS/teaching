@@ -20,6 +20,9 @@ body { background-image: none; }
 
 h1, h2, h3, h4 { font-family: 'DINOffcCondMedi'; }
 
+p, li { font-family: 'DinOffcLight'; }
+p.tagline { font-family: 'DinOffcLight'; color: #fff; font-size: 1.6em; }
+
 .page-heading h2 a { text-transform: uppercase; color: #fff; -webkit-transition: color 0.2s ease-in-out; -moz-transition: color 0.2s ease-in-out; -o-transition: color 0.2s ease-in-out; transition: color 0.2s ease-in-out; }
 .page-heading h2 a:hover { text-decoration: none; color: #ffc; }
 
@@ -67,12 +70,12 @@ div.span2.section {
 
 ol { list-style-type: decimal; }
 
-p strong, ol li strong { color: #000; }
+p strong, ol li strong { color: #444; }
 
 #handbook-nav { padding-top: 70px; }
-#handbook-nav li.nav-item a { color: #999; font-size: 12px; }
+#handbook-nav li.nav-item a { color: #999; font-size: 1.1em; line-height: 1.6em; }
 
-#handbook-nav .nav-header { padding: 15px 0 5px 0; font-family: 'DINOffcCondMedi'; font-size: 16px; color: #999; font-weight: normal; color: 0083b6; text-transform: uppercase; }
+#handbook-nav .nav-header { padding: 15px 0 5px 0; font-family: 'DINOffcCondMedi'; font-size: 1.5em; color: #999; font-weight: normal; color: 0083b6; text-transform: uppercase; }
 
 /*
 .section { padding: 10px; background-color: #fff; margin-top: 20px; margin-bottom: 10px; vertical-align: top; min-height: 200px; -webkit-box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, .1); box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, .1); -webkit-transition: background-color: 0.2s ease-in-out; -moz-transition: background-color 0.2s ease-in-out; -o-transition: background-color 0.2s ease-in-out; transition: background-color 0.2s ease-in-out; }
@@ -87,7 +90,7 @@ p strong, ol li strong { color: #000; }
 .pane p { color: #666; }
 .pane:hover { background-color: #ccc; }
 
-.teaching-nav.affix { top: 100px; width: 165px; }
+.teaching-nav.affix { top: 100px; }
 .teaching-nav.affix-bottom { position: absolute; }
 
 /* CNDLS Bootstrap 3 */
@@ -100,7 +103,7 @@ p strong, ol li strong { color: #000; }
 
 h1#tc-title {
     text-align: center;
-    margin-top: 330px;
+    margin-top: 200px;
     font-size: 7em;
     font-family: 'DINOffcCondMedi';
     font-weight: 600;
