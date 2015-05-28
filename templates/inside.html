@@ -43,6 +43,7 @@
   <div class="row">
     <div class="col-md-3" id="handbook-nav">
       <ul class="list-unstyled teaching-nav" data-spy="affix" data-offset-top="150" data-offset-bottom="750">
+        <li class="section-header">Teaching Handbook</li>
         <li class="nav-header"><a href="{{ url_for('page', path='design') }}">Designing a Course</a></li>
         {% for p in design_page_list %}
             <li class="nav-item{% if page.title == p.title %} active{% endif %}"><a href="{{ url_for('page', path=p.path) }}">{{ p.title }}</a></li>
