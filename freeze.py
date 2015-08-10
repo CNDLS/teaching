@@ -1,5 +1,5 @@
 from flask_frozen import Freezer
-from tc import app
+from teaching import app
 
 freezer = Freezer(app)
 

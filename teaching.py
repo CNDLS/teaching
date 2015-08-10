@@ -58,8 +58,8 @@ def show_story(slug):
 
 class ListView(MethodView):
     def get(self):
-        res = query_db('select title, slug from stories')
-        stories = [dict(title=row[0], slug=row[1]) for row in res]
+        res = query_db('select title, slug, tag_list from stories')
+        stories = [dict(title=row[0], slug=row[1], tag_list=row[2]) for row in res]
         return render_template('stories/list.html', stories=stories)
 
 class DetailView(MethodView):
