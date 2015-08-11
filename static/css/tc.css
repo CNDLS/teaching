@@ -111,3 +111,6 @@ h1#tc-title {
     text-transform: uppercase;
     color: #fff;
 }
+
+.dive { cursor: pointer; }
+.popover { font-family: 'DINOffcLight'; }

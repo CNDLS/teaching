@@ -7,3 +7,11 @@
 {{ page|safe }}
 
 {% endblock %}
+
+{% block postscript %}
+<script>
+$(function () {
+  $('[data-toggle="popover"]').popover({ html: true, trigger: 'focus' })
+})
+</script>
+{% endblock %}
