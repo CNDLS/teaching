@@ -8,6 +8,11 @@
   src: url('DINOffc-Light.ttf');
 }
 
+@font-face {
+  font-family: "DINOffcMedi";
+  src: url('DINOffc-Medi.ttf');
+}
+
 body {
   padding-top: 78px;
 }
