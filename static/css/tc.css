@@ -112,5 +112,5 @@ h1#tc-title {
     color: #fff;
 }
 
-.dive { cursor: pointer; }
+.dive { cursor: pointer; font-family: 'DinOffc'; }
 .popover { font-family: 'DINOffcLight'; }
