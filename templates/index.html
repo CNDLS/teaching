@@ -50,7 +50,7 @@ h3 { margin-top: 30px; color: #ccc; }
             </div>
             </a>
 
-            <a href="{{ ROOT_URL }}/teach/">
+            <a href="{{ url_for('page', path='teach') }}">
             <div class="col-md-4">
                 <div class="pane">
                 <p><img src="{{ url_for('static', filename='img/tc-facilitating.jpg') }}" class="img-responsive" /></p>
@@ -60,7 +60,7 @@ h3 { margin-top: 30px; color: #ccc; }
             </div>
             </a>
             
-            <a href="{{ ROOT_URL }}/glossary/">
+            <a href="{{ url_for('page', path='glossary') }}">
             <div class="col-md-4">
                 <div class="pane">
                 <p><img src="{{ url_for('static', filename='img/tc-modifying.jpg') }}" class="img-responsive" /></p>

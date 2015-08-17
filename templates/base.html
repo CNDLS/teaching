@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/tier2.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/tc.css') }}" />        
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
     {% block head %}{% endblock %}
   </head>
 
@@ -31,74 +32,29 @@
 
     {% block body %}{% endblock %}
 
-    <footer>
-      <div id="subnav">
-        <div class="container">
-          <div class="row">
+    <div id="subfooter">
+      <div class="container">
+        <div class="row">
             <div class="col-md-3">
-              <h1><a href="https://cndls.georgetown.edu/projects/">Projects &amp; Initiatives</a></h1>
-              <ul class="list-unstyled">                   
-                <li><a href="https://cndls.georgetown.edu/atprogram/">Apprenticeship in Teaching Program</a></li>
-                <li><a href="https://cndls.georgetown.edu/bottlenecks-and-thresholds/">Bottlenecks &amp; Thresholds Initiative</a></li>   
-                <li><a href="https://cndls.georgetown.edu/doyle/">The Doyle Program</a></li>
-                <li><a href="https://cndls.georgetown.edu/project/engelhard/">The Engelhard Project</a></li>
-                <li><a href="https://cndls.georgetown.edu/eportfolios/">ePortfolio Initiative</a></li>
-                <li><a href="https://cndls.georgetown.edu/projects/georgetownx/">GeorgetownX</a></li>
-                <li><a href="https://cndls.georgetown.edu/global-classroom/">Global Classroom</a></li>
-                <li><a href="https://itel.georgetown.edu/">Initiative on Technology-Enhanced Learning (ITEL)</a></li>
-              </ul>
-            </div><!-- /.col -->
-
-            <div class="col-md-3">
-              <h1><a href="https://cndls.georgetown.edu/support/">Teaching &amp; Technology</a></h1>
-              <ul class="list-unstyled">
-                <li class="nav-header">Pedagogy Resources</li>
-                <li><a href="https://commons.georgetown.edu/teaching/">The Teaching Commons</a></li>
-                <li><a href="https://cndls.georgetown.edu/support/assessment/">Assessment Services</a></li>
-                <li><a href="https://cndls.georgetown.edu/support/course-design/">Course &amp; Curriculum Design</a></li>
-                <li><a href="https://cndls.georgetown.edu/newfaculty/">Resources for New Faculty</a></li>
-          
-                <li class="nav-header">Technology &amp; New Media</li>
-                <li><a href="https://commons.georgetown.edu/tools/">Tools for Teaching &amp; Learning</a></li>
-                <li><a href="https://wiki.uis.georgetown.edu/display/BBSUPPORT/Home">Blackboard Support</a></li>
-                <li><a href="https://cndls.georgetown.edu/llt/">Language Learning Technology</a></li>
-                <li><a href="http://instructionalcontinuity.georgetown.edu/">Academic Continuity</a></li>
-              
-                <li class="nav-header">Grants</li>
-                <li><a href="https://cndls.georgetown.edu/grants/curriculum-enrichment-doyle/">Curriculum Enrichment &amp; Doyle Diversity Grants</a></li>
-                <li><a href="https://itel.georgetown.edu/">ITEL Grants</a></li>
-              </ul>
-            </div><!-- /.col -->
-
-            <div class="col-md-3">
-              <h1><a href="https://cndls.georgetown.edu/calendar/">Events</a></h1>
-              <ul class="list-unstyled">
-                  <li><a href="https://cndls.georgetown.edu/tlisi/">Teaching, Learning &amp; Innovation Summer Institute (TLISI)</a></li>
-                  <li><a href="https://cndls.georgetown.edu/calendar/">Event Calendar</a></li>
-              </ul>
-
-              <br />
-              <h1><a href="https://cndls.georgetown.edu/research/">Research</a></h1>
-            </div><!-- /.col -->
-
-            <div class="col-md-3">
-              <h1><a href="https://cndls.georgetown.edu/about/">About</a></h1>
-              <ul class="list-unstyled">
-                <li><a href="https://cndls.georgetown.edu/about/">About the Center</a></li>
-                <li><a href="https://cndls.georgetown.edu/people/">Our Staff</a></li>
-                <li><a href="https://cndls.georgetown.edu/about/advisory/">Faculty Advisory Board</a></li> 
-                <li><a href="https://cndls.georgetown.edu/about/scholars/">Senior Scholars</a></li> 
-                <li><a href="https://cndls.georgetown.edu/about/jobs/">Join the CNDLS Team</a></li>
-                <li><a href="https://blogs.commons.georgetown.edu/cndls/">CNDLS News</a></li>
-              </ul>
-            </div><!-- /.col -->        
-          </div><!-- /.row -->
-        </div><!-- /.container -->
-      </div><!-- /#subnav -->
-
-      <div id="colophon">      
+                <a href="http://www.georgetown.edu/"><img src="https://cndls.georgetown.edu/m/img/gtlogo-stack.svg" width="283" height="63" alt="Georgetown University"></a>
+            </div><!-- /.span4 -->
+            <div class="col-md-3 contact">
+                <ul class="fa-ul">
+                    <li><i class="fa-li fa fa-map-marker"></i><a href="https://www.google.com/maps/place/3520+Prospect+St+NW,+Washington,+DC+20007" target="_blank">3520 Prospect St. NW #314<br>
+                    Washington, DC 20057</a></li>
+                </ul>
+                <ul class="fa-ul">
+                    <li><i class="fa-li fa fa-phone-square"></i><a href="tel:+12026870625">202.687.0625</a></li>
+                    <li><i class="fa-li fa fa-envelope"></i><a href="mailto:cndls@georgetown.edu">cndls@georgetown.edu</a></li>
+                </ul>
+                <ul class="fa-ul">
+                    <li><i class="fa-li fa fa-twitter"></i><a href="https://twitter.com/cndls" target="_blank">Follow @cndls on Twitter</a></li>
+                    <li><i class="fa-li fa fa-facebook-square"></i><a href="https://www.facebook.com/cndls?_rdr=p" target="_blank">Follow CNDLS on Facebook</a></li>
+                </ul>
+			</div><!-- /.span4 .contact-->
+        </div><!-- /.row -->
       </div>
-    </footer>
+    </div><!-- /#subfooter -->
 
     <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>

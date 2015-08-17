@@ -1,5 +1,7 @@
 body { background-image: none; }
 
+#paper2 { margin: 30px 0; }
+
 .page-heading {
     background-position: top;
     background-repeat: no-repeat;

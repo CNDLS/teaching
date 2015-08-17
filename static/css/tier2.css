@@ -75,3 +75,27 @@ font-size: .875em;
 }
 
 #cndls-nav nav.navbar { top: 28px; }
+
+#subfooter {
+    background-position: 100% 20%;
+    background-repeat: no-repeat;
+    background-color: #000;
+    color: #666;
+    padding: 4em 0;
+}
+
+#subfooter div.contact {
+  border-left: .125em solid #666;
+  margin: 0 1.25em;
+}
+
+#subfooter div.contact ul {
+  padding-left: 0;
+}
+
+#subfooter a { color: #666; }
+
+.fa-ul {
+  margin-left: 2.14285714em;
+  list-style-type: none;
+  }
