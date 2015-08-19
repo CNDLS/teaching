@@ -23,7 +23,7 @@ body { background-image: none; }
 h1, h2, h3, h4 { font-family: 'DINOffcCondMedi'; }
 
 p, li { font-family: 'DinOffcLight'; }
-p.tagline { font-family: 'DinOffcLight'; color: #fff; font-size: 1.6em; }
+p.tagline { font-family: 'DinOffcLight'; color: #fff; font-size: 1.6em; text-shadow: 2px 2px 14px rgba(0, 0, 0, 1); text-align: center; }
 
 .page-heading h2 a { text-transform: uppercase; color: #fff; -webkit-transition: color 0.2s ease-in-out; -moz-transition: color 0.2s ease-in-out; -o-transition: color 0.2s ease-in-out; transition: color 0.2s ease-in-out; }
 .page-heading h2 a:hover { text-decoration: none; color: #ffc; }
@@ -109,12 +109,13 @@ p strong, ol li strong { color: #444; }
 
 h1#tc-title {
     text-align: center;
-    margin-top: 200px;
+    margin-top: 140px;
     font-size: 7em;
     font-family: 'DINOffcCondMedi';
     font-weight: 600;
     text-transform: uppercase;
     color: #fff;
+    text-shadow: 2px 2px 14px rgba(0, 0, 0, .5);
 }
 
 .dive { cursor: pointer; font-family: 'DinOffcMedi'; }
