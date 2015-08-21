@@ -126,3 +126,9 @@ h1#tc-title {
 
 .article-wrap aside p { font-size: 1.2em; color: #999; }
 .article-wrap h4 { text-transform: uppercase; color: #333; margin-top: 7px; }
+
+label { display: block; font-family: 'DinOffcLight'; font-size: 1.5em; color: #666; line-height: 1.5em; margin-left: 1px; }
+
+input[type=checkbox] { margin: 10px 0 0; }
+
+.well p { text-transform: none; margin-bottom: 0; }
