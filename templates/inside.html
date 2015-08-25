@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 
+{% block title %}{{ page.title }}{% endblock %}
+
 {% block secondary_nav %}
 <div id="secondary-nav" class="inside-top">
   <nav class="navbar navbar-custom navbar-fixed-top top-nav-collapse" role="navigation">
@@ -44,18 +46,22 @@
 <div class="container">
   <div class="row">
     <div class="col-md-3" id="handbook-nav">
-      <ul class="list-unstyled teaching-nav" data-spy="affix" data-offset-top="150" data-offset-bottom="750">
+      <ul class="list-unstyled teaching-nav" data-spy="affix" data-offset-top="50" data-offset-bottom="750">
         <li class="section-header">Teaching Guide</li>
+        <div class="row">
+      <div class="col-sm-4 col-md-12">
         <li class="nav-header"><a href="{{ url_for('page', path='design') }}">Designing a Course</a></li>
         {% for p in design_page_list %}
             <li class="nav-item{% if page.title == p.title %} active{% endif %}"><a href="{{ url_for('page', path=p.path) }}">{{ p.title }}</a></li>
         {% endfor %}
-
+      </div><!-- /.col -->
+      <div class="col-sm-4 col-md-12">
         <li class="nav-header"><a href="{{ url_for('page', path='teach') }}">Teaching a Course</a></li>
         {% for p in teach_page_list %}
             <li class="nav-item{% if page.title == p.title %} active{% endif %}"><a href="{{ url_for('page', path=p.path) }}">{{ p.title }}</a></li>
         {% endfor %}
-
+      </div>
+      <div class="col-sm-4 col-md-12">
         {# <li class="nav-header"><a href="#">Reading List</a></li> #}
         <li class="nav-header"><a href="{{ url_for('page', path='glossary') }}">Teaching Terms</a></li>
         <li class="nav-item">
@@ -64,10 +70,11 @@
           <a href="{{ url_for('page', path='glossary') }}#g" class="btn btn-default btn-xs">G-L</a>
           <a href="{{ url_for('page', path='glossary') }}#m" class="btn btn-default btn-xs">M-R</a>
           <a href="{{ url_for('page', path='glossary') }}#s" class="btn btn-default btn-xs">S-Z</a></div></li>
+      </div>
       </ul>
     </div><!-- /.col -->
 
-    <div class="col-md-8 article-wrap">
+    <div class="col-md-9 article-wrap">
 {% block page %}{% endblock %}
     </div><!-- /.col -->
   </div><!-- /.row -->

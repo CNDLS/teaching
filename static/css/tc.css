@@ -132,3 +132,11 @@ label { display: block; font-family: 'DinOffcLight'; font-size: 1.5em; color: #6
 input[type=checkbox] { margin: 10px 0 0; }
 
 .well p { text-transform: none; margin-bottom: 0; }
+
+@media (max-width: 991px) {
+  .teaching-nav.affix {
+    position: static;
+    width: auto;
+    top: 0;
+  }
+}

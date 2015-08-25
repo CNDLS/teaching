@@ -56,6 +56,7 @@ def show_story(slug):
     return render_template('story_detail.html', story=story)
 '''
 
+'''
 class ListView(MethodView):
     def get(self):
         res = query_db('select title, slug, tag_list from stories')
@@ -70,6 +71,7 @@ class DetailView(MethodView):
 
 app.add_url_rule('/stories/', view_func=ListView.as_view('stories'))
 app.add_url_rule('/stories/<slug>/', view_func=DetailView.as_view('story'))
+'''
 
 @app.route('/<path:path>/')
 def page(path):

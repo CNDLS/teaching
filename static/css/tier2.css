@@ -1,5 +1,7 @@
 body { padding: 0; }
 
+a { color: #0083b6; }
+
 #t2 { background: #444; }
 
 /* TOP NAV */
@@ -49,7 +51,7 @@ body { padding: 0; }
 
 #secondary-nav .top-nav-collapse {
     padding: 0;
-    background-color: #090;
+    background-color: #0083b6;
     z-index: 1;
 }
 
