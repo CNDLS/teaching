@@ -1,0 +1,17 @@
+{% extends "inside.html" %}
+
+{% block page %}
+
+<h1 class="page-title">{{ page.sub-title }}</h1>
+
+{{ page|safe }}
+
+{% endblock %}
+
+{% block postscript %}
+<script>
+$(function () {
+  $('[data-toggle="popover"]').popover({ html: true, trigger: 'focus' })
+})
+</script>
+{% endblock %}

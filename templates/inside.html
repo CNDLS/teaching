@@ -47,7 +47,7 @@
   <div class="row">
     <div class="col-md-3" id="handbook-nav">
       <ul class="list-unstyled teaching-nav" data-spy="affix" data-offset-top="50" data-offset-bottom="750">
-        <li class="section-header">Teaching Guide</li>
+        <!-- <li class="section-header">Teaching Guide</li> -->
         <div class="row">
       <div class="col-sm-4 col-md-12">
         <li class="nav-header"><a href="{{ url_for('page', path='design') }}">Designing a Course</a></li>
@@ -62,7 +62,7 @@
         {% endfor %}
       </div>
       <div class="col-sm-4 col-md-12">
-        {# <li class="nav-header"><a href="#">Reading List</a></li> #}
+        <li class="nav-header"><a href="https://cndls.georgetown.edu/newfaculty/">New Faculty FAQs</a></li>
         <li class="nav-header"><a href="{{ url_for('page', path='glossary') }}">Teaching Terms</a></li>
         <li class="nav-item">
         <div class="btn-group">
@@ -76,6 +76,7 @@
 
     <div class="col-md-9 article-wrap">
 {% block page %}{% endblock %}
+
     </div><!-- /.col -->
   </div><!-- /.row -->
 </div><!-- /.container -->

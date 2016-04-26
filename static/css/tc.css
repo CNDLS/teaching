@@ -22,6 +22,22 @@ body { background-image: none; }
 
 h1, h2, h3, h4 { font-family: 'DINOffcCondMedi'; }
 
+h2:before { 
+  display: block; 
+  content: " "; 
+  margin-top: -100px; 
+  height: 100px; 
+  visibility: hidden; 
+}
+
+p:before {
+  display: block; 
+  content: " "; 
+  margin-top: -250px; 
+  height: 250px; 
+  visibility: hidden; 
+}
+
 p, li { font-family: 'DinOffcLight'; }
 p.tagline { font-family: 'DinOffcLight'; color: #fff; font-size: 1.6em; text-shadow: 2px 2px 14px rgba(0, 0, 0, 1); text-align: center; }
 
@@ -31,7 +47,7 @@ p.tagline { font-family: 'DinOffcLight'; color: #fff; font-size: 1.6em; text-sha
 .section-heading a { color: #999; }
 .section-heading a:hover { text-decoration: none; color: #333; }
 
-h1.page-title { margin-top: 30px; font-size: 5em; color: #0083b6; }
+h1.page-title { font-size: 5rem; color: #0083b6; margin-top: 0; }
 
 #subsections { margin-top: 30px; margin-bottom: 30px; }
 
@@ -61,6 +77,13 @@ div.span2.section {
     margin-bottom: 30px;
 }
 
+a.anchor {
+    display: block;
+    position: relative;
+    top: -150px;
+    visibility: hidden;
+}
+
 .tc-preview-strip {
     background: url('https://cndls.georgetown.edu/m/img/gray_jean.png');
     padding: 15px 0;
@@ -77,11 +100,11 @@ ol { list-style-type: decimal; }
 
 p strong, ol li strong { color: #444; }
 
-#handbook-nav { padding-top: 70px; }
+#handbook-nav { padding-top: 50px; }
 #handbook-nav li.nav-item a { color: #999; font-size: 1.1em; line-height: 1.6em; }
 
-#handbook-nav .nav-header { padding: 15px 0 5px 0; font-family: 'DINOffcCondMedi'; font-size: 1.5em; color: #999; font-weight: normal; color: 0083b6; text-transform: uppercase; }
-#handbook-nav .section-header { font-size: 1.5em; font-family: 'DinOffcCondMedi'; font-size: 2em; padding: 15px 0 5px 0; color: #444; }
+#handbook-nav .nav-header { padding: 10px 0 5px 0; font-family: 'DINOffcCondMedi'; font-size: 1.375em; color: #999; font-weight: normal; text-transform: uppercase; }
+#handbook-nav .section-header { padding: 10px 0 5px 0; font-family: 'DinOffcCondMedi'; font-size: 1.5em; color: #444; }
 
 /*
 .section { padding: 10px; background-color: #fff; margin-top: 20px; margin-bottom: 10px; vertical-align: top; min-height: 200px; -webkit-box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, .1); box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, .1); -webkit-transition: background-color: 0.2s ease-in-out; -moz-transition: background-color 0.2s ease-in-out; -o-transition: background-color 0.2s ease-in-out; transition: background-color 0.2s ease-in-out; }

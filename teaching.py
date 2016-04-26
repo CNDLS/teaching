@@ -15,8 +15,8 @@ def prerender_jinja(text):
 
 APP_PREFIX='/teaching/'
 app.config.update(dict(
-    MYSQL_DATABASE_USER = 'root',
-    MYSQL_DATABASE_DB = 'teaching',
+    # MYSQL_DATABASE_USER = 'root',
+    # MYSQL_DATABASE_DB = 'teaching',
     FREEZER_DESTINATION = 'build',
     FREEZER_DESTINATION_IGNORE = ['.GIT*', 'CNAME', '.gitignore', 'readme.md'],
     FREEZER_BASE_URL = 'http://localhost' + APP_PREFIX,
