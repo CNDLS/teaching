@@ -122,8 +122,8 @@ p strong, ol li strong { color: #444; }
 .pane p { color: #666; }
 .pane:hover { background-color: #ccc; }
 
-.teaching-nav.affix { top: 100px; }
-.teaching-nav.affix-bottom { position: absolute; }
+/*.teaching-nav.affix { top: 100px; }
+.teaching-nav.affix-bottom { position: absolute; }*/
 
 /* CNDLS Bootstrap 3 */
 
