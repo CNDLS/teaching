@@ -33,22 +33,25 @@
   <nav class="navbar navbar-custom navbar-fixed-top top-nav-collapse" role="navigation">
     <div class="container">
       <div class="navbar-header page-scroll">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+        <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
           <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-        </button>
+        </button> -->
         <a class="navbar-brand" href="/teaching/"><h1>The Teaching Commons</h1></a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-        <ul class="nav navbar-nav">
+        <!-- THE BELOW IS COMMENTED OUT—PLAN ON REMOVING THIS MENU
+        AND REPLACING WITH A PLAIN HEADER -->
+        <!-- <ul class="nav navbar-nav"> -->
           <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-          <li class="hidden">
+          <!-- <li class="hidden">
             <a href="#page-top"></a>
           </li>
 
-        </ul>
+        </ul> -->
       </div>
+    </div>
       <!-- /.navbar-collapse -->
     </div><!-- /.container -->
   </nav>
@@ -58,9 +61,9 @@
     
 <div class="container">
   <div class="row">
-    <div class="col-md-3" id="handbook-nav">
-      <ul class="list-unstyled teaching-nav" data-spy="affix" data-offset-top="50" data-offset-bottom="750">
-        <!-- <li class="section-header">Teaching Guide</li> -->
+    <nav class="col-md-3" id="handbook-nav" role="navigation">
+      <ul class="list-unstyled teaching-nav" data-spy="affix" data-offset-top="50" data-offset-bottom="750"> <!-- data-offset-bottom="750" -->
+        <li class="section-header">Teaching Guide</li>
         <div class="row">
       <div class="col-sm-4 col-md-12">
         <li class="nav-header"><a href="/teaching/design/">Designing a Course</a></li>
@@ -121,7 +124,7 @@
           <a href="/teaching/glossary/#s" class="btn btn-default btn-xs">S-Z</a></div></li>
       </div>
       </ul>
-    </div><!-- /.col -->
+    </nav><!-- /.col -->
 
     <div class="col-md-9 article-wrap">
 

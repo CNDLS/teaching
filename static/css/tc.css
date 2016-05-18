@@ -51,7 +51,13 @@ h1.page-title { font-size: 5rem; color: #0083b6; margin-top: 0; }
 
 #subsections { margin-top: 30px; margin-bottom: 30px; }
 
-.article-wrap { margin-top: 50px; margin-bottom: 50px; min-height: 1500px;}
+.article-wrap { 
+  margin-top: 50px; 
+  margin-bottom: 50px; 
+  min-height: 1500px;
+  /*position: relative;
+  left: 30%;*/
+}
 .article-wrap a { font-family: 'DinOffcMedi'; }
 
 .article-wrap strong { font-family: 'DinOffcMedi'; }
@@ -102,7 +108,10 @@ p strong, ol li strong { color: #444; }
 
 #handbook-nav { 
   padding-top: 50px;
-  /*overflow-y: scroll;*/
+  /*position: fixed;
+  height: 80vh;
+  overflow-y: scroll;
+  outline: 1px solid red;*/
 }
 #handbook-nav li.nav-item a { color: #999; font-size: 1.1em; line-height: 1.6em; }
 
@@ -122,8 +131,10 @@ p strong, ol li strong { color: #444; }
 .pane p { color: #666; }
 .pane:hover { background-color: #ccc; }
 
-/*.teaching-nav.affix { top: 100px; }
-.teaching-nav.affix-bottom { position: absolute; }*/
+.teaching-nav.affix { 
+  top: 100px;
+}
+.teaching-nav.affix-bottom { position: absolute; }
 
 /* CNDLS Bootstrap 3 */
 
