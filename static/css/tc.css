@@ -170,6 +170,15 @@ input[type=checkbox] { margin: 10px 0 0; }
 
 .well p { text-transform: none; margin-bottom: 0; }
 
+
+
+/*Verified that at 991px, position: fixed...wait, shouldn't it be static?
+Ok:
+.affix { position: fixed; }
+what the hell...
+
+
+*/
 @media (max-width: 991px) {
   .teaching-nav.affix {
     position: static;
