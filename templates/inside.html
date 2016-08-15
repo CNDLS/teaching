@@ -11,10 +11,28 @@
           <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
         </button> -->
         <a class="navbar-brand" href="{{ url_for('index') }}"><h1>The Teaching Commons</h1></a>
+        
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+      <div class="collapse navbar-collapse navbar-left navbar-main-collapse nav navbar-nav">
+        <ul class="nav navbar-nav">
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Designing a Course</a>
+              <ul class="dropdown-menu">
+                  {% for p in design_page_list %}
+                      <li class="nav-item{% if page.title == p.title %} active{% endif %}"><a href="{{ url_for('page', path=p.path) }}">{{ p.title }}</a></li>
+                  {% endfor %}
+              </ul>
+          </li>
+
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Teaching a Course</a>
+              <ul class="dropdown-menu">
+                  {% for p in teach_page_list %}
+                      <li class="nav-item{% if page.title == p.title %} active{% endif %}"><a href="{{ url_for('page', path=p.path) }}">{{ p.title }}</a></li>
+                  {% endfor %}
+              </ul>
+          </li>
+        </ul>
         <!-- THE BELOW IS COMMENTED OUT—PLAN ON REMOVING THIS MENU
         AND REPLACING WITH A PLAIN HEADER -->
         <!-- <ul class="nav navbar-nav"> -->
@@ -52,23 +70,26 @@
 
     <nav class="col-md-3" id="handbook-nav" role="navigation">
       <ul class="list-unstyled teaching-nav" data-spy="affix" data-offset-top="50" data-offset-bottom="750"> <!-- data-offset-bottom="750" -->
-        <li class="section-header">Teaching Guide</li>
-        <div class="row">
       <div class="col-sm-4 col-md-12">
-        <li class="nav-header"><a href="{{ url_for('page', path='design') }}">Designing a Course</a></li>
-        {% for p in design_page_list %}
-            <li class="nav-item{% if page.title == p.title %} active{% endif %}"><a href="{{ url_for('page', path=p.path) }}">{{ p.title }}</a></li>
-        {% endfor %}
-      </div><!-- /.col -->
-      <div class="col-sm-4 col-md-12">
-        <li class="nav-header"><a href="{{ url_for('page', path='teach') }}">Teaching a Course</a></li>
-        {% for p in teach_page_list %}
-            <li class="nav-item{% if page.title == p.title %} active{% endif %}"><a href="{{ url_for('page', path=p.path) }}">{{ p.title }}</a></li>
-        {% endfor %}
-      </div>
-      <div class="col-sm-4 col-md-12">
-        <li class="nav-header"><a href="https://cndls.georgetown.edu/newfaculty/">New Faculty FAQs</a></li>
-        <li class="nav-header"><a href="{{ url_for('page', path='glossary') }}">Teaching Terms</a></li>
+        <li class="nav-header"><a href="https://cndls.georgetown.edu/newfaculty/">New Faculty FAQs</a>
+            <ul class="list-unstyled teaching-nav">
+                <li class="nav-item small">Student Interaction</li>
+                <li class="nav-item small">Course Logistics</li>
+                <li class="nav-item small">University Policy</li>
+                <li class="nav-item small">Teacher Development</li>
+                <li class="nav-item small">Other Information</li>
+            </ul>
+        </li>
+        <li class="nav-header"><a href="{{ url_for('page', path='glossary') }}">Teaching Terms</a>
+            <ul class="list-unstyled teaching-nav">
+                <li class="nav-item small">Active Learning</li>
+                <li class="nav-item small">Backward Design</li>
+                <li class="nav-item small">Cognitive Apprenticeship</li>
+                <li class="nav-item small">Community of practice</li>
+                <li class="nav-item small">Community-based learning</li>
+                <li class="nav-item small">&hellip;</li>
+            </ul>
+        </li>
         <li class="nav-item">
         <div class="btn-group">
           <a href="{{ url_for('page', path='glossary') }}#a" class="btn btn-default btn-xs">A-F</a>

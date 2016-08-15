@@ -112,7 +112,7 @@ footer #subnav li.nav-header {
   color: #999999;
   margin-top: 9px;
   letter-spacing: 1px;
-}
+} 
 footer #subnav li a {
   color: #666;
   font-size: 0.9em;
@@ -123,4 +123,26 @@ footer #subnav li a {
 footer #subnav li a:hover {
   color: #fff;
   text-decoration: none;
+}
+
+
+ul.navbar-nav {
+  margin-left: 3.5em; 
+  font-size: 1.5em;
+}
+ul.navbar-nav .dropdown-menu>.active>a, 
+ul.navbar-nav .dropdown-menu>.active>a:focus, 
+ul.navbar-nav .dropdown-menu>.active>a:hover {
+  color: white;
+}
+ul.navbar-nav ul.dropdown-menu li.nav-item.active:hover {
+  color: white;
+  background: #337ab7;
+}
+ul.navbar-nav ul.dropdown-menu li a {
+  color: #666;
+}
+
+.teaching-nav li.nav-item.small {
+  font-size: 0.8em;
 }
