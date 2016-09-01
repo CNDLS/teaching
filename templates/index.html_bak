@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+
+{% block title %}CNDLS at Georgetown University{% endblock %}
+
+{% block body %}
+<style type="text/css">
+#feature {
+    background: url('{{ url_for('static', filename='img/tc-splash.jpg') }}');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll;
+    min-height: 450px;
+    margin-top: -50px;
+}
+</style>
+
+<div id="feature">
+<div class="container">
+<div class="row">
+
+    <div class="col-md-12" id="tc-splash">
+    <h1 class="landing-title" id="tc-title">The Teaching Commons</h1>
+    </div>
+
+</div>
+
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <p class="tagline">Resources related to teaching, including tools for designing your courses, examples from faculty, and suggestions for further reading on a range of pedagogical topics. Applicable to all disciplines and open to anyone.</p>
+  </div>
+</div><!-- /.row -->
+</div>
+</div>
+
+<style>
+h3 { margin-top: 30px; color: #ccc; }
+</style>
+
+<div id="paper2">
+    <div id="first-deck" class="container">
+
+        <div class="row">
+
+            <a href="{{ url_for('page', path='design') }}">
+            <div class="col-md-4">
+                <div class="pane">
+                <p><img src="{{ url_for('static', filename='img/tc-planning.jpg') }}" class="img-responsive" /></p>
+                <h3>Designing a Course</h3>
+                <p>Learn how to design effective learning goals, assessment activities, and syllabi for your courses.</p>
+                </div>
+            </div>
+            </a>
+
+            <a href="{{ url_for('page', path='teach') }}">
+            <div class="col-md-4">
+                <div class="pane">
+                <p><img src="{{ url_for('static', filename='img/tc-facilitating.jpg') }}" class="img-responsive" /></p>
+                <h3>Teaching a Course</h3>
+                <p>Learn how to manage discussions, create engaging lectures, use technology, and assess students.</p>
+                </div>
+            </div>
+            </a>
+            
+            <a href="{{ url_for('page', path='glossary') }}">
+            <div class="col-md-4">
+                <div class="pane">
+                <p><img src="{{ url_for('static', filename='img/tc-modifying.jpg') }}" class="img-responsive" /></p>
+                <h3>Teaching Terms</h3>
+                <p>Look up definitions of key teaching terms complete with excerpts from teaching and learning sources.</p>
+                </div>
+            </div>
+            </a>
+        </div><!-- /.row -->
+
+    </div><!-- /#majorprojects .container -->
+
+</div><!-- /#darkstripes -->
+
+{#
+        <div class="container" style="margin-top: 50px;">
+
+			<div class="row" id="second-deck">				
+
+                <a href="theories/">				
+				<div class="col-md-3 section">
+                <h3>Trending</h3>
+                <p>Understand principal theories behind student learning and how to actively engage students with diverse backgrounds.</p>
+                </div>
+                </a>
+
+                <a href="glossary/">
+				<div class="col-md-3 section">
+                <h3>Teaching Glossary</h3>
+                <p>Look up definitions of key teaching terms complete with excerpts from teaching and learning sources.</p>
+                </div>
+                </a>
+
+                <a href="resources/">
+				<div class="col-md-3 section">
+                <h3>Useful Resources</h3>
+                <p>Browse a variety of links and resources related to teaching and learning from the Georgetown Commons.</p>
+                </div>
+                </a>
+
+                <a href="cndls/">
+				<div class="col-md-3 section">
+                <h3>Getting Involved with CNDLS</h3>
+                <p>Learn about CNDLS-specific funding opportunities and explore stories of faculty implementing new designs in their classrooms.</p>
+                </div>
+                </a>
+
+			</div><!-- /.row -->
+
+        </div><!-- /.container -->
+#}
+
+<br /><br /><br />
+
+{% endblock %}
