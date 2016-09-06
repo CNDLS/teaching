@@ -6,61 +6,50 @@
 <div id="secondary-nav" class="inside-top">
   <nav class="navbar navbar-custom navbar-fixed-top top-nav-collapse" role="navigation">
     <div class="container">
-      <div class="navbar-header page-scroll">
-        <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-          <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-        </button> -->
-        <a class="navbar-brand" href="{{ url_for('index') }}"><h1>The Teaching Commons</h1></a>
-        
-      </div>
+      <div class="row">
+        <div class="navbar-header page-scroll col-md-3">
+          <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+            <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+          </button> -->
+          <a class="navbar-brand" href="{{ url_for('index') }}"><h1>The Teaching Commons</h1></a>
+        <!-- Hamburger menu here -->
+          <div class="col-md-9">
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#teach-design-menu">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div> <!-- end .col-md-9 -->
+        </div> <!-- end navbar-header -->
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse navbar-left navbar-main-collapse nav navbar-nav">
-        <ul class="nav navbar-nav">
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Designing a Course</a>
+
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- <div class="collapse navbar-collapse navbar-left navbar-main-collapse nav navbar-nav" data-toggle="collapse" id="teach-design-menu"> -->
+        <div class="collapse navbar-collapse navbar-left navbar-main-collapse nav navbar-nav col-md-9" id="teach-design-menu">
+          <ul class="nav navbar-nav">
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Designing a Course</a>
               <ul class="dropdown-menu">
-                  {% for p in design_page_list %}
-                      <li class="nav-item{% if page.title == p.title %} active{% endif %}"><a href="{{ url_for('page', path=p.path) }}">{{ p.title }}</a></li>
+                {% for p in design_page_list %}
+                <li class="nav-item{% if page.title == p.title %} active{% endif %}"><a href="{{ url_for('page', path=p.path) }}">{{ p.title }}</a></li>
+                {% endfor %}
+              </ul>
+            </li>
+
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Teaching a Course</a>
+              <ul class="dropdown-menu">
+                {% for p in teach_page_list %}
+                <li class="nav-item{% if page.title == p.title %} active{% endif %}"><a href="{{ url_for('page', path=p.path) }}">{{ p.title }}</a></li>
                   {% endfor %}
               </ul>
-          </li>
-
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Teaching a Course</a>
-              <ul class="dropdown-menu">
-                  {% for p in teach_page_list %}
-                      <li class="nav-item{% if page.title == p.title %} active{% endif %}"><a href="{{ url_for('page', path=p.path) }}">{{ p.title }}</a></li>
-                  {% endfor %}
-              </ul>
-          </li>
-        </ul>
-        <!-- THE BELOW IS COMMENTED OUT—PLAN ON REMOVING THIS MENU
-        AND REPLACING WITH A PLAIN HEADER -->
-        <!-- <ul class="nav navbar-nav"> -->
-          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-          <!-- <li class="hidden">
-            <a href="#page-top"></a>
-          </li>
-{#
-          <li class="page-scroll">
-            <a href="{{ url_for('page', path='teach') }}">Teaching Guide</a>
-          </li>
-          <li class="page-scroll">
-            <a href="{{ url_for('page', path='resources') }}">Useful Resources</a>
-          </li>
-          <li class="page-scroll">
-            <a href="{{ url_for('page', path='stories') }}">Faculty Stories</a>
-          </li>
-          <li class="page-scroll">
-            <a href="{{ url_for('page', path='cndls') }}">Working with CNDLS</a>
-          </li>
-#}
-        </ul> -->
-      </div>
-    </div>
-      <!-- /.navbar-collapse -->
-    </div><!-- /.container -->
+            </li>
+          </ul>
+        </div> <!-- end #teach-design-menu -->
+      </div> <!-- end row -->
+    </div> <!-- /.container -->
   </nav>
-</div>
+</div> <!-- end #secondary-nav -->
 {% endblock %}
 
 {% block body %}
@@ -68,27 +57,28 @@
   <div class="row">
 
 
-    <nav class="col-md-3" id="handbook-nav" role="navigation">
-      <ul class="list-unstyled teaching-nav" data-spy="affix" data-offset-top="50" data-offset-bottom="750"> <!-- data-offset-bottom="750" -->
+    <nav class="col-md-3 col-sm-12" id="handbook-nav" role="navigation">
+      <ul class="list-unstyled teaching-nav">
+      <!-- <ul class="list-unstyled teaching-nav" data-spy="affix" data-offset-top="50" data-offset-bottom="750"> -->
       <div class="col-sm-4 col-md-12">
         <li class="nav-header"><a href="https://cndls.georgetown.edu/newfaculty/">New Faculty FAQs</a>
             <ul class="list-unstyled teaching-nav">
-                <li class="nav-item small">Student Interaction</li>
-                <li class="nav-item small">Course Logistics</li>
-                <li class="nav-item small">University Policy</li>
-                <li class="nav-item small">Teacher Development</li>
-                <li class="nav-item small">Other Information</li>
+                <li class="nav-item small"><a href="https://cndls.georgetown.edu//newfaculty/#studentinteraction">Student Interaction</a></li>
+                <li class="nav-item small"><a href="https://cndls.georgetown.edu//newfaculty/#courselogistics">Course Logistics</a></li>
+                <li class="nav-item small"><a href="https://cndls.georgetown.edu/newfaculty/#universitypolicy">University Policy</a></li>
+                <li class="nav-item small"><a href="https://cndls.georgetown.edu/newfaculty/#teacherdevelopment">Teacher Development</a></li>
+                <li class="nav-item small"><a href="https://cndls.georgetown.edu/newfaculty/#otherinformation">Other Information</a></li>
             </ul>
         </li>
         <li class="nav-header"><a href="{{ url_for('page', path='glossary') }}">Teaching Terms</a>
-            <ul class="list-unstyled teaching-nav">
+            <!-- <ul class="list-unstyled teaching-nav">
                 <li class="nav-item small">Active Learning</li>
                 <li class="nav-item small">Backward Design</li>
                 <li class="nav-item small">Cognitive Apprenticeship</li>
                 <li class="nav-item small">Community of practice</li>
                 <li class="nav-item small">Community-based learning</li>
                 <li class="nav-item small">&hellip;</li>
-            </ul>
+            </ul> -->
         </li>
         <li class="nav-item">
         <div class="btn-group">

@@ -136,8 +136,6 @@ p strong, ol li strong { color: #444; }
 }
 .teaching-nav.affix-bottom { position: absolute; }
 
-/* CNDLS Bootstrap 3 */
-
 
 #handbook-nav li.nav-item.active a { font-weight: bold; color: #333; }
 
@@ -172,17 +170,27 @@ input[type=checkbox] { margin: 10px 0 0; }
 
 
 
-/*Verified that at 991px, position: fixed...wait, shouldn't it be static?
-Ok:
-.affix { position: fixed; }
-what the hell...
 
-
-*/
 @media (max-width: 991px) {
   .teaching-nav.affix {
     position: static;
     width: auto;
     top: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #handbook-nav  {
+    margin-bottom: 75px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Change colors of Teach and Design menu items when hamburgered */
+  #teach-design-menu ul.dropdown-menu {
+    background-color: #0083b6;
+  }
+  #teach-design-menu ul.dropdown-menu a {
+    color: #fff;
   }
 }

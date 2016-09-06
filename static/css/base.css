@@ -134,15 +134,36 @@ ul.navbar-nav .dropdown-menu>.active>a,
 ul.navbar-nav .dropdown-menu>.active>a:focus, 
 ul.navbar-nav .dropdown-menu>.active>a:hover {
   color: white;
+  outline: 1px solid gray;
+  background-color: gray;
 }
-ul.navbar-nav ul.dropdown-menu li.nav-item.active:hover {
+/*ul.navbar-nav ul.dropdown-menu li.nav-item.active:hover {
   color: white;
   background: #337ab7;
-}
+}*/
+
 ul.navbar-nav ul.dropdown-menu li a {
   color: #666;
 }
 
+ul.navbar-nav ul.dropdown-menu li a:hover {
+  background-color: #337ab7;
+  color: #fff;
+}
+
 .teaching-nav li.nav-item.small {
   font-size: 0.8em;
+}
+
+#teach-design-menu > ul {
+  margin-left: 0;
+}
+
+/*.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}*/
+
+.icon-bar {
+  background-color: #fff;
 }
