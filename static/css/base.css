@@ -137,10 +137,6 @@ ul.navbar-nav .dropdown-menu>.active>a:hover {
   outline: 1px solid gray;
   background-color: gray;
 }
-/*ul.navbar-nav ul.dropdown-menu li.nav-item.active:hover {
-  color: white;
-  background: #337ab7;
-}*/
 
 ul.navbar-nav ul.dropdown-menu li a {
   color: #666;
