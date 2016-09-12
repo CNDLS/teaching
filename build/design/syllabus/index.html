@@ -32,30 +32,90 @@
 <div id="secondary-nav" class="inside-top">
   <nav class="navbar navbar-custom navbar-fixed-top top-nav-collapse" role="navigation">
     <div class="container">
-      <div class="navbar-header page-scroll">
-        <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-          <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-        </button> -->
-        <a class="navbar-brand" href="/teaching/"><h1>The Teaching Commons</h1></a>
-      </div>
+      <div class="row">
+        <div class="navbar-header page-scroll col-md-3">
+          <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+            <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+          </button> -->
+          <a class="navbar-brand" href="/teaching/"><h1>The Teaching Commons</h1></a>
+        <!-- Hamburger menu here -->
+          <div class="col-md-9">
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#teach-design-menu">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div> <!-- end .col-md-9 -->
+        </div> <!-- end navbar-header -->
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-        <!-- THE BELOW IS COMMENTED OUT—PLAN ON REMOVING THIS MENU
-        AND REPLACING WITH A PLAIN HEADER -->
-        <!-- <ul class="nav navbar-nav"> -->
-          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-          <!-- <li class="hidden">
-            <a href="#page-top"></a>
-          </li>
 
-        </ul> -->
-      </div>
-    </div>
-      <!-- /.navbar-collapse -->
-    </div><!-- /.container -->
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- <div class="collapse navbar-collapse navbar-left navbar-main-collapse nav navbar-nav" data-toggle="collapse" id="teach-design-menu"> -->
+        <div class="collapse navbar-collapse navbar-left navbar-main-collapse nav navbar-nav col-md-9" id="teach-design-menu">
+          <ul class="nav navbar-nav">
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Designing a Course</a>
+              <ul class="dropdown-menu">
+                
+                <li class="nav-item"><a href="/teaching/design/">Designing Backward</a></li>
+                
+                <li class="nav-item"><a href="/teaching/design/factors/">Factors to Consider</a></li>
+                
+                <li class="nav-item"><a href="/teaching/design/learning_goals/">Learning Goals</a></li>
+                
+                <li class="nav-item"><a href="/teaching/design/assessment/">Designing Assessments</a></li>
+                
+                <li class="nav-item"><a href="/teaching/design/strategies/">Teaching Strategies</a></li>
+                
+                <li class="nav-item"><a href="/teaching/design/policies/">Georgetown Policies</a></li>
+                
+                <li class="nav-item active"><a href="/teaching/design/syllabus/">Creating Your Syllabus</a></li>
+                
+                <li class="nav-item"><a href="/teaching/design/sotl/">Scholarship of Teaching &amp; Learning</a></li>
+                
+              </ul>
+            </li>
+
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Teaching a Course</a>
+              <ul class="dropdown-menu">
+                
+                <li class="nav-item"><a href="/teaching/teach/starting/">Starting the Semester</a></li>
+                  
+                <li class="nav-item"><a href="/teaching/teach/classroom/">Classroom Space</a></li>
+                  
+                <li class="nav-item"><a href="/teaching/teach/contact/">Communication and Contact</a></li>
+                  
+                <li class="nav-item"><a href="/teaching/teach/assistants/">Teaching Assistants</a></li>
+                  
+                <li class="nav-item"><a href="/teaching/teach/technology/">Teaching with Technologies</a></li>
+                  
+                <li class="nav-item"><a href="/teaching/teach/planning-leading/">Planning and Leading Class</a></li>
+                  
+                <li class="nav-item"><a href="/teaching/teach/">Active Learning</a></li>
+                  
+                <li class="nav-item"><a href="/teaching/teach/lecturing-effectively/">Lecturing Effectively</a></li>
+                  
+                <li class="nav-item"><a href="/teaching/teach/discussions/">Difficult Discussions</a></li>
+                  
+                <li class="nav-item"><a href="/teaching/teach/evaluating/">Evaluating Student Learning</a></li>
+                  
+                <li class="nav-item"><a href="/teaching/teach/respond-to-student-writing/">Responding to Student Writing</a></li>
+                  
+                <li class="nav-item"><a href="/teaching/teach/grading/">Grading</a></li>
+                  
+                <li class="nav-item"><a href="/teaching/teach/feedback/">Gathering Teaching Feedback</a></li>
+                  
+                <li class="nav-item"><a href="/teaching/teach/ending-the-semester/">Ending the Semester</a></li>
+                  
+              </ul>
+            </li>
+          </ul>
+        </div> <!-- end #teach-design-menu -->
+      </div> <!-- end row -->
+    </div> <!-- /.container -->
   </nav>
-</div>
+</div> <!-- end #secondary-nav -->
 
 
     
@@ -63,65 +123,29 @@
   <div class="row">
 
 
-    <nav class="col-md-3" id="handbook-nav" role="navigation">
-      <ul class="list-unstyled teaching-nav" data-spy="affix" data-offset-top="50" data-offset-bottom="750"> <!-- data-offset-bottom="750" -->
-        <li class="section-header">Teaching Guide</li>
-        <div class="row">
+    <nav class="col-md-3 col-sm-12" id="handbook-nav" role="navigation">
+      <ul class="list-unstyled teaching-nav">
+      <!-- <ul class="list-unstyled teaching-nav" data-spy="affix" data-offset-top="50" data-offset-bottom="750"> -->
       <div class="col-sm-4 col-md-12">
-        <li class="nav-header"><a href="/teaching/design/">Designing a Course</a></li>
-        
-            <li class="nav-item"><a href="/teaching/design/">Designing Backward</a></li>
-        
-            <li class="nav-item"><a href="/teaching/design/factors/">Factors to Consider</a></li>
-        
-            <li class="nav-item"><a href="/teaching/design/learning_goals/">Learning Goals</a></li>
-        
-            <li class="nav-item"><a href="/teaching/design/assessment/">Designing Assessments</a></li>
-        
-            <li class="nav-item"><a href="/teaching/design/strategies/">Teaching Strategies</a></li>
-        
-            <li class="nav-item"><a href="/teaching/design/policies/">Georgetown Policies</a></li>
-        
-            <li class="nav-item active"><a href="/teaching/design/syllabus/">Creating Your Syllabus</a></li>
-        
-            <li class="nav-item"><a href="/teaching/design/sotl/">Scholarship of Teaching &amp; Learning</a></li>
-        
-      </div><!-- /.col -->
-      <div class="col-sm-4 col-md-12">
-        <li class="nav-header"><a href="/teaching/teach/">Teaching a Course</a></li>
-        
-            <li class="nav-item"><a href="/teaching/teach/starting/">Starting the Semester</a></li>
-        
-            <li class="nav-item"><a href="/teaching/teach/classroom/">Classroom Space</a></li>
-        
-            <li class="nav-item"><a href="/teaching/teach/contact/">Communication and Contact</a></li>
-        
-            <li class="nav-item"><a href="/teaching/teach/assistants/">Teaching Assistants</a></li>
-        
-            <li class="nav-item"><a href="/teaching/teach/technology/">Teaching with Technologies</a></li>
-        
-            <li class="nav-item"><a href="/teaching/teach/planning-leading/">Planning and Leading Class</a></li>
-        
-            <li class="nav-item"><a href="/teaching/teach/">Active Learning</a></li>
-        
-            <li class="nav-item"><a href="/teaching/teach/lecturing-effectively/">Lecturing Effectively</a></li>
-        
-            <li class="nav-item"><a href="/teaching/teach/discussions/">Difficult Discussions</a></li>
-        
-            <li class="nav-item"><a href="/teaching/teach/evaluating/">Evaluating Student Learning</a></li>
-        
-            <li class="nav-item"><a href="/teaching/teach/respond-to-student-writing/">Responding to Student Writing</a></li>
-        
-            <li class="nav-item"><a href="/teaching/teach/grading/">Grading</a></li>
-        
-            <li class="nav-item"><a href="/teaching/teach/feedback/">Gathering Teaching Feedback</a></li>
-        
-            <li class="nav-item"><a href="/teaching/teach/ending-the-semester/">Ending the Semester</a></li>
-        
-      </div>
-      <div class="col-sm-4 col-md-12">
-        <li class="nav-header"><a href="https://cndls.georgetown.edu/newfaculty/">New Faculty FAQs</a></li>
-        <li class="nav-header"><a href="/teaching/glossary/">Teaching Terms</a></li>
+        <li class="nav-header"><a href="https://cndls.georgetown.edu/newfaculty/">New Faculty FAQs</a>
+            <ul class="list-unstyled teaching-nav">
+                <li class="nav-item small"><a href="https://cndls.georgetown.edu/newfaculty/#studentinteraction">Student Interaction</a></li>
+                <li class="nav-item small"><a href="https://cndls.georgetown.edu/newfaculty/#courselogistics">Course Logistics</a></li>
+                <li class="nav-item small"><a href="https://cndls.georgetown.edu/newfaculty/#universitypolicy">University Policy</a></li>
+                <li class="nav-item small"><a href="https://cndls.georgetown.edu/newfaculty/#teacherdevelopment">Teacher Development</a></li>
+                <li class="nav-item small"><a href="https://cndls.georgetown.edu/newfaculty/#otherinformation">Other Information</a></li>
+            </ul>
+        </li>
+        <li class="nav-header"><a href="/teaching/glossary/">Teaching Terms</a>
+            <!-- <ul class="list-unstyled teaching-nav">
+                <li class="nav-item small">Active Learning</li>
+                <li class="nav-item small">Backward Design</li>
+                <li class="nav-item small">Cognitive Apprenticeship</li>
+                <li class="nav-item small">Community of practice</li>
+                <li class="nav-item small">Community-based learning</li>
+                <li class="nav-item small">&hellip;</li>
+            </ul> -->
+        </li>
         <li class="nav-item">
         <div class="btn-group">
           <a href="/teaching/glossary/#a" class="btn btn-default btn-xs">A-F</a>
@@ -143,7 +167,7 @@
 <blockquote>
 <div class="row">
     <div class="col-md-7">
-    <iframe src="https://player.vimeo.com/video/175584032?title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <iframe src="https://player.vimeo.com/video/175584032?title=0&byline=0&portrait=0" width="470" height="264" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
     <div class="col-md-5">
       <p><small>Georgetown Professor Marcia Chatelain on putting together an effective syllabus.</small></p>
@@ -211,7 +235,7 @@
 <blockquote>
 <div class="row">
     <div class="col-md-7">
-    <iframe src="https://player.vimeo.com/video/178645681?title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <iframe src="https://player.vimeo.com/video/178645681?title=0&byline=0&portrait=0" width="470" height="264" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
     <div class="col-md-5">
       <p><small>Georgetown Professor Betsy Sigman on syllabus necessities.</small></p>
@@ -229,7 +253,7 @@
   <li><a href="/teaching/static/files/Syllabus-Guidroz_Kathleen_160_2015.pdf" download>Sociology 160: Sociology of Sexualities</a> (Kathleen Guidroz)</li>
 </ul>
 
-<h2>Other resources</h2>
+<h2>Additional resources</h2>
 <ul>
 <li>Stanford Teaching Commons: <a href="https://teachingcommons.stanford.edu/resources/course-preparation-resources/creating-syllabus">Creating a Syllabus</a></li>
 <li>ProfHacker <a href="http://chronicle.com/blogs/profhacker/creative-approaches-to-the-syllabus/35621">Creative Approaches to the Syllabus</a>: This blog post from the <em>Chronicle of Higher Education’s</em> ProfHacker blog offers some inspiring examples of visually intriguing syllabi.</li>
