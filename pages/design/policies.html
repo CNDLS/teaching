@@ -1,5 +1,5 @@
 title: Georgetown Policies
-order: 1.7
+order: 1.8
 
 <p class="lead">As you design and teach your class at Georgetown University, you’ll want to keep in mind a few campus policies. The quotes below come from the official university policies (with hyperlinks to the original sources included). You’ll also find some examples of how Georgetown faculty have, when relevant, included this information on their syllabi.</p>
 
@@ -203,17 +203,21 @@ Counseling and Psychiatric Services (CAPS)<br>
 
 <p class="lead">A more comprehensive exploration of Georgetown University policies for faculty, students, and staff, can be found <a href="http://policies.georgetown.edu/">here</a>.</p>
 
+{% block postscript %}
+<script type="text/javascript">
+  console.log('block postscript')
+</script>
+{% endblock %}
 
 <!--
 
     The below script was included, I think as an attempt to get content blocks to show/hide.
-    This didn't work bc jQuery was being referenced before this content block in the parent
+    This didn't work bc jQuery was being referenced after this content block in the parent
     template file.
     As a temporary fix, moved this script to static/js/main.js.
 
 <script type="text/javascript">
     $(document).ready(function() {
-console.log("testing");
         // hide descriptions
         $('div.more').hide();
         

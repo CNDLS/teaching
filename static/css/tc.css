@@ -168,6 +168,38 @@ input[type=checkbox] { margin: 10px 0 0; }
 
 .well p { text-transform: none; margin-bottom: 0; }
 
+.dropdown-container {
+  margin: 2rem 1.5rem;
+  border-top: 3px double #eee;
+  border-bottom: 3px double #eee;
+  position: relative;
+  font-size: 90%;
+}
+.dropdown-container-title {
+  padding-bottom: 15px;
+}
+.dropdown-container .row {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.dropdown-container img {
+  padding: 0 15px;
+}
+.dropdown-container .col-md-12 {
+  padding: 15px 15px;
+  margin: 0;
+}
+.dropdown-container-question {
+  padding-left: 0;
+  margin-left: 0;
+}
+.dropdown-container ul li {
+  list-style-type: none;
+  padding-bottom: 10px;
+  font-size: 110%;
+}
+
+
 
 
 
