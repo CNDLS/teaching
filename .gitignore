@@ -7,6 +7,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+.venv/
 env/
 bin/
 build/
@@ -53,4 +54,8 @@ coverage.xml
 docs/_build/
 
 *.DS_Store
+.DS_Store
 *.ttf
+
+#PyCharm
+.idea/
