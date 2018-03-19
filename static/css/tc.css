@@ -297,6 +297,22 @@ li {
 	p {
 		margin-bottom: 14px;
 	}
+	blockquote.callout_box {
+		background: #e3e3e3;
+		border: none;
+		margin: 20px 0 40px 0;
+		padding: 18px 14px;
+		opacity: 1;
+		border-radius: 0;
+	}
+	blockquote p.callout_txt {
+		color: #000000;
+		opacity: 1;
+		font-size: 16px;
+		font-family: 'DINOffcIta';
+		letter-spacing: 0;
+		line-height: 1.5;
+	}
 }
 /* M, L, and XL screen-size */
 @media (min-width: 991px) {
@@ -338,6 +354,22 @@ li {
 	}
 	p {
 		margin-bottom: 15px;
+	}
+	blockquote.callout_box {
+		background: #e3e3e3;
+		border: none;
+		margin: 20px 0 40px 0;
+		padding: 20px;
+		opacity: 1;
+		border-radius: 0;
+	}
+	blockquote p.callout_txt {
+		color: #000000;
+		opacity: 1;
+		font-size: 20px;
+		font-family: 'DINOffcLightIta';
+		letter-spacing: 0;
+		line-height: 1.5;
 	}
 }
 

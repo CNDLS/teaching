@@ -22,6 +22,14 @@
 	font-family: "DINOffcBold";
 	src: url('../fonts/DINOffc-Bold.ttf');
 }
+@font-face {
+	font-family: "DINOffcIta";
+	src: url('../fonts/DINOffc-Ita.ttf');
+}
+@font-face {
+	font-family: "DINOffcLightIta";
+	src: url('../fonts/DINOffc-LightIta.ttf');
+}
 
 body {
 	padding-top: 78px;
