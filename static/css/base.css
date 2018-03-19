@@ -2,22 +2,22 @@
 	font-family: "DINOffcCondMedi";
 	src: url('../fonts/DINOffc-CondMedi.ttf');
 }
-
-@font-face {
-	font-family: "DINOffcLight";
-	src: url('../fonts/DINOffc-Light.ttf');
-}
-
-@font-face {
-	font-family: "DINOffcMedi";
-	src: url('../fonts/DINOffc-Medi.ttf');
-}
-
 @font-face {
 	font-family: "DINOffcCondBold";
 	src: url('../fonts/DINOffc-CondBold.ttf');
 }
-
+@font-face {
+	font-family: "DINOffc";
+	src: url('../fonts/DINOffc.ttf');
+}
+@font-face {
+	font-family: "DINOffcLight";
+	src: url('../fonts/DINOffc-Light.ttf');
+}
+@font-face {
+	font-family: "DINOffcMedi";
+	src: url('../fonts/DINOffc-Medi.ttf');
+}
 @font-face {
 	font-family: "DINOffcBold";
 	src: url('../fonts/DINOffc-Bold.ttf');
