@@ -1,16 +1,16 @@
 @font-face {
   font-family: "DINOffcCondMedi";
-  src: url('DINOffc-CondMedi.ttf');
+  src: url('../fonts/DINOffc-CondMedi.ttf');
 }
 
 @font-face {
   font-family: "DINOffcLight";
-  src: url('DINOffc-Light.ttf');
+  src: url('../fonts/DINOffc-Light.ttf');
 }
 
 @font-face {
   font-family: "DINOffcMedi";
-  src: url('DINOffc-Medi.ttf');
+  src: url('../fonts/DINOffc-Medi.ttf');
 }
 
 body {
