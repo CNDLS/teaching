@@ -1,165 +1,175 @@
 @font-face {
-  font-family: "DINOffcCondMedi";
-  src: url('../fonts/DINOffc-CondMedi.ttf');
+	font-family: "DINOffcCondMedi";
+	src: url('../fonts/DINOffc-CondMedi.ttf');
 }
 
 @font-face {
-  font-family: "DINOffcLight";
-  src: url('../fonts/DINOffc-Light.ttf');
+	font-family: "DINOffcLight";
+	src: url('../fonts/DINOffc-Light.ttf');
 }
 
 @font-face {
-  font-family: "DINOffcMedi";
-  src: url('../fonts/DINOffc-Medi.ttf');
+	font-family: "DINOffcMedi";
+	src: url('../fonts/DINOffc-Medi.ttf');
+}
+
+@font-face {
+	font-family: "DINOffcCondBold";
+	src: url('../fonts/DINOffc-CondBold.ttf');
+}
+
+@font-face {
+	font-family: "DINOffcBold";
+	src: url('../fonts/DINOffc-Bold.ttf');
 }
 
 body {
-  padding-top: 78px;
+	padding-top: 78px;
 }
 header #georgetown {
-  background: #444444;
-  text-align: right;
-  padding: 4px 0;
+	background: #444444;
+	text-align: right;
+	padding: 4px 0;
 }
 header #cndls nav {
-  background: #000;
+	background: #000;
 }
 header #cndls nav .navbar-brand {
-  background: #0083b6;
-  padding: 8px 20px;
-  margin-left: 0;
+	background: #0083b6;
+	padding: 8px 20px;
+	margin-left: 0;
 }
 header #cndls .dropdown-toggle {
-  font-family: "DINOffcCondMedi";
-  text-transform: uppercase;
-  color: #999999;
-  font-size: 17px;
-  line-height: 20px;
+	font-family: "DINOffcCondMedi";
+	text-transform: uppercase;
+	color: #999999;
+	font-size: 17px;
+	line-height: 20px;
 }
 header #cndls li a:hover {
-  color: #fff;
+	color: #fff;
 }
 header #cndls .dropdown-menu {
-  border-top: 0;
-  padding-bottom: 12px;
+	border-top: 0;
+	padding-bottom: 12px;
 }
 header #cndls .dropdown-menu li.nav-header {
-  font-family: "DINOffcCondMedi";
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #0083b6;
-  margin-top: 9px;
-  padding: 3px 20px;
+	font-family: "DINOffcCondMedi";
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #0083b6;
+	margin-top: 9px;
+	padding: 3px 20px;
 }
 header #cndls .dropdown-menu a:hover {
-  background-color: #0083b6;
+	background-color: #0083b6;
 }
 header #cndls .navbar-form {
-  padding: 5px 0 0 0;
+	padding: 5px 0 0 0;
 }
 header #cndls .open > a {
-  background-color: #222;
+	background-color: #222;
 }
 header #cndls form#search.navbar-form input {
-  background: #333;
-  border-color: #444;
-  border-width: 1px;
-  color: #999;
+	background: #333;
+	border-color: #444;
+	border-width: 1px;
+	color: #999;
 }
 section {
-  padding: 50px 0;
+	padding: 50px 0;
 }
 section h4 {
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #666;
-  padding-bottom: 15px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #666;
+	padding-bottom: 15px;
 }
 section.splash {
-  padding: 0;
+	padding: 0;
 }
 section.title {
-  padding: 15px 0;
-  box-shadow: inset 0 0 20px #ccc;
+	padding: 15px 0;
+	box-shadow: inset 0 0 20px #ccc;
 }
 section.title h1 {
-  font-family: "DINOffcCondMedi";
-  text-transform: uppercase;
-  font-size: 48px;
-  margin: 0;
-  color: #666;
+	font-family: "DINOffcCondMedi";
+	text-transform: uppercase;
+	font-size: 48px;
+	margin: 0;
+	color: #666;
 }
 section.intro {
-  background: #0083b6;
-  color: #fff;
+	background: #0083b6;
+	color: #fff;
 }
 section.intro p.lead {
-  font-size: 42px;
+	font-size: 42px;
 }
 footer #subnav {
-  background: #333;
-  padding: 30px 0;
+	background: #333;
+	padding: 30px 0;
 }
 footer #subnav h1 a {
-  color: #0083b6;
-  font: 21px "DinOffcCondMedi";
-  text-transform: uppercase;
+	color: #0083b6;
+	font: 21px "DinOffcCondMedi";
+	text-transform: uppercase;
 }
 footer #subnav li.nav-header {
-  font-family: "DINOffcCondMedi";
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #999999;
-  margin-top: 9px;
-  letter-spacing: 1px;
+	font-family: "DINOffcCondMedi";
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #999999;
+	margin-top: 9px;
+	letter-spacing: 1px;
 } 
 footer #subnav li a {
-  color: #666;
-  font-size: 0.9em;
-  line-height: 1.3em;
-  display: block;
-  padding: 3px 0;
+	color: #666;
+	font-size: 0.9em;
+	line-height: 1.3em;
+	display: block;
+	padding: 3px 0;
 }
 footer #subnav li a:hover {
-  color: #fff;
-  text-decoration: none;
+	color: #fff;
+	text-decoration: none;
 }
 
 
 ul.navbar-nav {
-  margin-left: 3.5em; 
-  font-size: 1.5em;
+	margin-left: 3.5em; 
+	font-size: 1.5em;
 }
 ul.navbar-nav .dropdown-menu>.active>a, 
 ul.navbar-nav .dropdown-menu>.active>a:focus, 
 ul.navbar-nav .dropdown-menu>.active>a:hover {
-  color: white;
-  outline: 1px solid gray;
-  background-color: gray;
+	color: white;
+	outline: 1px solid gray;
+	background-color: gray;
 }
 
 ul.navbar-nav ul.dropdown-menu li a {
-  color: #666;
+	color: #666;
 }
 
 ul.navbar-nav ul.dropdown-menu li a:hover {
-  background-color: #337ab7;
-  color: #fff;
+	background-color: #337ab7;
+	color: #fff;
 }
 
 .teaching-nav li.nav-item.small {
-  font-size: 0.8em;
+	font-size: 0.8em;
 }
 
 #teach-design-menu > ul {
-  margin-left: 0;
+	margin-left: 0;
 }
 
 /*.dropdown:hover .dropdown-menu {
-  display: block;
-  margin-top: 0;
-}*/
+	display: block;
+	margin-top: 0;
+	}*/
 
-.icon-bar {
-  background-color: #fff;
-}
+	.icon-bar {
+		background-color: #fff;
+	}
