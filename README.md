@@ -20,3 +20,10 @@ Running the development server
 ------------------------------
 * In the project root: ``python teaching.py``
 * To create the static build: ``python freeze.py``. This will create a directory called ``build`` which can then be uploaded directly to the spot on cndls-lux where the Teaching Commons site is deployed: ``/var/www/docroot-ocw/teaching``.
+
+## Staging Site
+* We  have set up a staging site for the Teaching Commons on CNDLS-LUX at `/var/www/docroot-ocw/teaching/staging/`.
+* Access to the staging site is password-protected using HTTP Basic Authenication.
+* The .htaccess file used for Basic Authentication is found in the git repo in the directory /staging/.
+* The password file used for Basic Authentication is /.tc-staging-passwd.
+* On the server, .tc-staging-password is kept in `/var/www/docroot-ocw/ so that it is not accessible from a browser.
