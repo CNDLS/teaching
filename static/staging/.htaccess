@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "You Must Be Associated with CNDLS To View This Staging Site"
-AuthUserFile /var/www/docroot-ocw/.tc-staging-passwd
-Require valid-user
