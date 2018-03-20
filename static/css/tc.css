@@ -128,9 +128,6 @@ p strong, ol li strong {
 	min-height: 200px; 
 	-webkit-box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, .1); 
 	box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, .1); 
-	-webkit-transition: background-color: 0.2s ease-in-out; 
-	-moz-transition: background-color 0.2s ease-in-out; 
-	-o-transition: background-color 0.2s ease-in-out; 
 	transition: background-color 0.2s ease-in-out; 
 }
 .pane h3 { 
@@ -264,7 +261,7 @@ li {
 		opacity: 1;
 		font-size: 14px;
 		font-family: 'DINOffc';
-		letter-spacing: 0;s
+		letter-spacing: 0;
 		line-height: 1.5;
 	}
 	h1.page-title {
@@ -297,7 +294,7 @@ li {
 	p {
 		margin-bottom: 14px;
 	}
-	blockquote.callout_box {
+	blockquote.callout_bokjx {
 		background: #e3e3e3;
 		border: none;
 		margin: 20px 0 40px 0;
@@ -322,7 +319,7 @@ li {
 		opacity: 1;
 		font-size: 15px;
 		font-family: 'DINOffc';
-		letter-spacing: 0;s
+		letter-spacing: 0;
 		line-height: 1.5;
 	}
 	h1.page-title {
