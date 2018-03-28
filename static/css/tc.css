@@ -133,6 +133,25 @@ ol {
 	}
 }
 
+ul {
+	margin-bottom: 30px;
+}
+
+a {
+	font-family: "DINOffcBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #0082B8;
+}
+
+/* Don't apply normal bold font to a link if it is inside a heading */
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  font-family: inherit;
+}
+
 blockquote.callout_box {
 	background: #e3e3e3;
 	border: none;
