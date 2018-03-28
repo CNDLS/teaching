@@ -83,22 +83,46 @@ h4 {
   line-height: 1em;
 }
 
-p {
-  font-family: "DINOffc", "Helvetica Neue", Helvetica, Arial, sans-serif;
+p,
+li,
+ol {
+	font-family: "DINOffc", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #444444;
   opacity: 1;
   font-size: 16px;
   letter-spacing: 0;
   line-height: 1.4;
   font-weight: normal;
+}
+
+@media screen and (max-width: 767px) {
+	p,
+	li,
+	ol {
+    font-size: 14px;
+  }
+}
+
+p {
   margin: 0 0 20px 0;
 }
 
 @media screen and (max-width: 767px) {
-  p {
-    font-size: 14px;
-    margin: 0 0 15px 0;
-  }
+	p {
+		margin: 0 0 15px 0;
+	}
+}
+
+li,
+ol {
+	margin-bottom: 6px;
+}
+
+@media screen and (max-width: 767px) {
+	li,
+	ol {
+		margin-bottom: 10px;
+	}
 }
 
 .lead {
@@ -219,9 +243,11 @@ a.anchor {
 .tc-preview-strip h4 a { 
 	color: #fff; 
 }
+
 ol { 
 	list-style-type: decimal; 
 }
+
 p strong, ol li strong { 
 	color: #444; 
 }
@@ -353,10 +379,6 @@ input[type=checkbox] {
 	list-style-type: none;
 	padding-bottom: 10px;
 	font-size: 110%;
-}
-li {
-	font-family: inherit;
-	margin-bottom: 12px;
 }
 
 /* @media */
