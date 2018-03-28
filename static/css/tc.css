@@ -133,7 +133,8 @@ ol {
 	}
 }
 
-ul {
+ul,
+ol {
 	margin-bottom: 30px;
 }
 
