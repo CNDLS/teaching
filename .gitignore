@@ -59,3 +59,8 @@ docs/_build/
 #PyCharm
 .idea/
 \.vscode/settings\.json
+
+deploy-scripts/config\.sh
+
+# Ignore build directory
+/build/
