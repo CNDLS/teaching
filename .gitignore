@@ -55,7 +55,6 @@ docs/_build/
 
 *.DS_Store
 .DS_Store
-*.ttf
 
 #PyCharm
 .idea/

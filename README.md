@@ -1,12 +1,10 @@
-Requirements
-------------
-* Flask
-* Flask-FlatPages
-* Frozen-Flask
-* flask-mysql
+# The Teaching Commons
+## Site Info
+* URL: https://commons.georgetown.edu/teaching/
+* Server: CNDLS-LUX
+* Server Location: `/var/www/docroot-ocw/teaching`
 
-Installation
-------------
+## Installation
 * First, you'll need to set up a Python virtual environment. I usually do this in a directory called ``.src`` in my home directory.
 * Create the virtual environment: ``virtualenv flask``
 * Activate the virtual environment: ``source flask/bin/activate``
@@ -16,7 +14,9 @@ Installation
 * Install Frozen-Flask: ``pip install frozen-flask``
 * Install flask-mysql: ``pip install flask-mysql``
 
-Running the development server
-------------------------------
+## Running the development server
 * In the project root: ``python teaching.py``
-* To create the static build: ``python freeze.py``. This will create a directory called ``build`` which can then be uploaded directly to the spot on cndls-lux where the Teaching Commons site is deployed: ``/var/www/docroot-ocw/teaching``.
+* To create the static build: ``python freeze.py``. This will create a directory called ``build`` which can then be uploaded directly to the serveer.
+
+## Deployment
+* After running `python freeze.py`, copy the contents of the `/build/` directory of this repository to the server directory, using SFTP or SSH.
