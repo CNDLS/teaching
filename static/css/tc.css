@@ -101,6 +101,16 @@ p {
   }
 }
 
+.lead {
+	margin-bottom: 40px;
+}
+
+@media screen and (max-width: 767px) {
+	.lead {
+		margin-bottom: 30px;
+	}
+}
+
 blockquote.callout_box {
 	background: #e3e3e3;
 	border: none;
