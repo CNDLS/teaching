@@ -165,6 +165,10 @@ ul.navbar-nav ul.dropdown-menu li a:hover {
 	color: #fff;
 }
 
+.navbar li {
+	margin-bottom: 0;
+}
+
 .teaching-nav li.nav-item.small {
 	font-size: 0.8em;
 }

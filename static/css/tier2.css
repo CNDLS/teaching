@@ -55,7 +55,14 @@ a { color: #0083b6; }
     z-index: 1;
 }
 
-#secondary-nav h1 { margin-top: 0; font-size: 2em; text-transform: uppercase; }
+#secondary-nav h1 { 
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 22.5px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 22.5px;
+}
 
 #secondary-nav .navbar-brand { padding-top: 15px; font-size: .75em; }
 
