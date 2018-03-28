@@ -84,8 +84,7 @@ h4 {
 }
 
 p,
-li,
-ol {
+li {
 	font-family: "DINOffc", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #444444;
   opacity: 1;
@@ -97,8 +96,7 @@ ol {
 
 @media screen and (max-width: 767px) {
 	p,
-	li,
-	ol {
+	li {
     font-size: 14px;
   }
 }
