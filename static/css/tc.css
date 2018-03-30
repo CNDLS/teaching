@@ -143,6 +143,11 @@ a {
 	color: #0082B8;
 }
 
+strong {
+  font-family: "DINOffcBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+
 /* Don't apply normal bold font to a link if it is inside a heading */
 h1 a,
 h2 a,
