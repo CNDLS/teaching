@@ -171,6 +171,7 @@ ul.navbar-nav ul.dropdown-menu li a:hover {
 
 .teaching-nav li.nav-item.small {
 	font-size: 0.8em;
+	margin-bottom: 0;
 }
 
 #teach-design-menu > ul {
