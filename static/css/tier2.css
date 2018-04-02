@@ -110,7 +110,17 @@ font-size: .875em;
   padding-left: 0;
 }
 
-#subfooter a { color: #666; }
+#subfooter a {
+  color: #666;
+  font-family: "DINOffcLight";
+  line-height: 20px;
+  font-size: 14px;
+}
+
+#subfooter .fa {
+    color: #666;
+    font-size: 14px;
+}
 
 .fa-ul {
   margin-left: 2.14285714em;
