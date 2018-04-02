@@ -158,6 +158,8 @@ ul.navbar-nav .dropdown-menu>.active>a:hover {
 
 ul.navbar-nav ul.dropdown-menu li a {
 	color: #666;
+	font-size: 12.25px;
+	letter-spacing: 1px;
 }
 
 ul.navbar-nav ul.dropdown-menu li a:hover {
