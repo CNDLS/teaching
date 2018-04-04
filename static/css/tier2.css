@@ -75,13 +75,13 @@ a { color: #0083b6; }
 }
 
 .navbar-custom.top-nav-collapse img, .navbar-custom.top-nav-collapse h1 {
-opacity: 1;
+  opacity: 1;
 }
 
 .navbar-custom.top-nav-collapse a {
   color: #fff;
   font-size: 18.375px;
-  font-family: "DINOffcLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "DINOffc", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .navbar-custom.top-nav-collapse {

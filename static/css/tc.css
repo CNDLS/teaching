@@ -38,17 +38,17 @@ h2 {
   font-family: "DINOffcCondBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #0082b8;
   opacity: 1;
-  font-size: 24px;
+  font-size: 30px;
   line-height: 1.3;
   letter-spacing: 0;
-  margin: 20px 0 20px 0;
+  margin: 50px 0 20px 0;
   font-weight: normal;
 }
 
 @media screen and (max-width: 767px) {
   h2 {
-    font-size: 22px;
-    margin: 15px 0 15px 0;
+    font-size: 24px;
+    margin: 40px 0 15px 0;
   }
 }
 
@@ -180,7 +180,7 @@ blockquote p.callout_txt {
 }
 
 p.tagline { 
-	font-family: 'DinOffcLight'; 
+	font-family: 'DINOffcLight'; 
 	color: #fff; 
 	font-size: 1.6em; 
 	text-shadow: 2px 2px 14px rgba(0, 0, 0, 1); 
@@ -279,7 +279,7 @@ p strong, ol li strong {
 }
 
 #handbook-nav a {
-	font-family: "DinOffcLight";
+	font-family: "DINOffc";
 }
 
 #handbook-nav li.nav-item a { 
@@ -308,7 +308,7 @@ p strong, ol li strong {
 }
 #handbook-nav .section-header { 
 	padding: 10px 0 5px 0; 
-	font-family: 'DinOffcCondMedi'; 
+	font-family: 'DINOffcCondMedi'; 
 	font-size: 1.5em; 
 	color: #444; 
 }
@@ -360,7 +360,7 @@ h1#tc-title {
 }
 .dive { 
 	cursor: pointer; 
-	font-family: 'DinOffcMedi'; 
+	font-family: 'DINOffcMedi'; 
 }
 .popover { 
 	font-family: 'DINOffcLight'; 
@@ -377,7 +377,7 @@ h1#tc-title {
 }
 label { 
 	display: block; 
-	font-family: 'DinOffcLight'; 
+	font-family: 'DINOffcLight'; 
 	font-size: 1.5em; 
 	color: #666; 
 	line-height: 1.5em; 
@@ -440,5 +440,6 @@ input[type=checkbox] {
 	}
 	#teach-design-menu ul.dropdown-menu a {
 		color: #fff;
+		font-family: 'DINOffc';
 	}
 }
