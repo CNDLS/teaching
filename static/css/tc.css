@@ -420,6 +420,9 @@ input[type=checkbox] {
 	padding-bottom: 10px;
 	font-size: 110%;
 }
+.btn-info {
+	margin-bottom: 5px;
+}
 
 /* @media */
 @media (max-width: 991px) {
