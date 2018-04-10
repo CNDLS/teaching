@@ -136,6 +136,7 @@ ol {
 ul,
 ol {
 	margin-bottom: 30px;
+	margin-top: 6px;
 }
 
 a {
@@ -418,6 +419,9 @@ input[type=checkbox] {
 	list-style-type: none;
 	padding-bottom: 10px;
 	font-size: 110%;
+}
+.btn-info {
+	margin-bottom: 5px;
 }
 
 /* @media */
