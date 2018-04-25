@@ -6,6 +6,8 @@ cd "${LOCAL_DIR}"
 
 pwd
 
+git checkout master
+
 git pull origin master
 
 git status
@@ -21,9 +23,9 @@ python freeze.py
 #      -v: Increase verbosity
 #      -e: Specify the remote shell to use
 #      -I: Ignore times: don't skip files that match size and time, i.e. overwrite all files at destination
-# --perms: Preserve file permissions 
+# --perms: Preserve file permissions
 # --group: Preserve group
-# A trailing / on a source name means "copy the contents of this directory". 
+# A trailing / on a source name means "copy the contents of this directory".
 # Without a trailing slash it means "copy the directory".
 # In this case, we want to copy the entire directory.
 
