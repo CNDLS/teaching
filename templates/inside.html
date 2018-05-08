@@ -40,10 +40,7 @@
             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Teaching a Course</a>
               <ul class="dropdown-menu">
                 {% for p in teach_page_list %}
-                  {# Don't show Teaching Commons Bibliography in the menu #}
-                  {% if p.title != 'Teaching Commons Bibliography' %}
-                    <li class="nav-item{% if page.title == p.title %} active{% endif %}"><a href="{{ url_for('page', path=p.path) }}">{{ p.title }}</a></li>
-                  {% endif %}
+                  <li class="nav-item{% if page.title == p.title %} active{% endif %}"><a href="{{ url_for('page', path=p.path) }}">{{ p.title }}</a></li>
                 {% endfor %}
               </ul>
             </li>
