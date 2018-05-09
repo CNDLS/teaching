@@ -8,6 +8,7 @@ __pycache__/
 # Distribution / packaging
 .Python
 .venv/
+.env
 env/
 bin/
 build/
@@ -56,9 +57,9 @@ docs/_build/
 *.DS_Store
 .DS_Store
 
-#PyCharm
+#Editor Settings
 .idea/
-\.vscode/settings\.json
+.vscode
 
 deploy-scripts/config\.sh
 
