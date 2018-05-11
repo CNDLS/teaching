@@ -40,7 +40,9 @@
             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Teaching a Course</a>
               <ul class="dropdown-menu">
                 {% for p in teach_page_list %}
-                  <li class="nav-item{% if page.title == p.title %} active{% endif %}"><a href="{{ url_for('page', path=p.path) }}">{{ p.title }}</a></li>
+                  {% if p.title != 'Teaching Commons Bibliography' %}
+                    <li class="nav-item{% if page.title == p.title %} active{% endif %}"><a href="{{ url_for('page', path=p.path) }}">{{ p.title }}</a></li>
+                  {% endif %}
                 {% endfor %}
               </ul>
             </li>
@@ -71,7 +73,7 @@
             </ul>
         </li>
         <li class="nav-header">
-          <a href="/teaching/teach/tc-bibliography/">Teaching Commons Bibliography</a>
+          <a href="{{ url_for('page', path='teach/tc-bibliography') }}">Teaching Commons Bibliography</a>
         </li>
       </div>
       </ul>
