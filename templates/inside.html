@@ -29,7 +29,8 @@
         <!-- <div class="collapse navbar-collapse navbar-left navbar-main-collapse nav navbar-nav" data-toggle="collapse" id="teach-design-menu"> -->
         <div class="collapse navbar-collapse navbar-left navbar-main-collapse nav navbar-nav col-md-9" id="teach-design-menu">
           <ul class="nav navbar-nav">
-            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Designing a Course</a>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Designing a Course</a>
               <ul class="dropdown-menu">
                 {% for p in design_page_list %}
                 <li class="nav-item{% if page.title == p.title %} active{% endif %}"><a href="{{ url_for('page', path=p.path) }}">{{ p.title }}</a></li>
