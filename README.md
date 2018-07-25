@@ -40,5 +40,6 @@
   * You can even mix Jinja 2 and Markdown, which is why many of the flatpages have some content in Markdown, and some in HTML.
 
 ## URL Routing
+* [How to define routes in Flask](http://flask.pocoo.org/docs/1.0/quickstart/#routing)
 * URL routing and assigning templates to pages occurs in the file teaching.py.
 
