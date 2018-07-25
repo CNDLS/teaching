@@ -84,4 +84,4 @@ def page(path):
     return render_template(template, page=page, design_page_list=design_page_list, teach_page_list=teach_page_list)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
