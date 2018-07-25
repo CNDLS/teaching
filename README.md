@@ -42,4 +42,6 @@
 ## URL Routing
 * [How to define routes in Flask](http://flask.pocoo.org/docs/1.0/quickstart/#routing)
 * URL routing and assigning templates to pages occurs in the file teaching.py.
+* In this app, flatpages use a default template unless the 'template' meta key is defined in the flatpage.
+* As of this writing (07/25/2018), only two templates are being used: templates/index.html and templates/handbook/detail.html (which extends other parent templates)
 
