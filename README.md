@@ -16,10 +16,11 @@
 
 ## Running the development server
 * In the project root: `python teaching.py`
-* To create the static build: `python freeze.py`. This will create a directory called `build` which can then be uploaded directly to the serveer.
 
 ## Deployment
+* To create the static build: `python freeze.py`. This will create a directory called `build` which can then be uploaded directly to the serveer.
 * After running `python freeze.py`, copy the contents of the `/build/` directory of this repository to the server directory, using SFTP or SSH.
+* All pages in the ./pages/ directory will be built when you run Frozen Flask.
 
 ## Editing Site Content
 * The content for this site is stored in HTML files ("flatpages") in the ./pages/ directory.
