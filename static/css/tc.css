@@ -6,8 +6,8 @@ html {
   font-weight: 400;
 }
 
-body { 
-	background-image: none; 
+body {
+	background-image: none;
 	color: #000000;
 	opacity: 1;
 	font-size: 15px;
@@ -25,7 +25,7 @@ h1 {
   line-height: 1.3;
   text-transform: uppercase;
   margin: 50px 0 30px 0;
-}  
+}
 
 @media screen and (max-width: 767px) {
   h1 {
@@ -159,6 +159,15 @@ h6 a {
   font-family: inherit;
 }
 
+/* Utility classes for underlining and italicizing */
+.underlined {
+  text-decoration: underline;
+}
+
+.italicized {
+  font-style: italic;
+}
+
 blockquote.callout_box {
 	background: #e3e3e3;
 	border: none;
@@ -176,73 +185,73 @@ blockquote p.callout_txt {
 	line-height: 1.5;
 }
 
-#paper2 { 
-	margin: 30px 0; 
+#paper2 {
+	margin: 30px 0;
 }
 
-p.tagline { 
-	font-family: 'DINOffcLight'; 
-	color: #fff; 
-	font-size: 1.6em; 
-	text-shadow: 2px 2px 14px rgba(0, 0, 0, 1); 
-	text-align: center; 
+p.tagline {
+	font-family: 'DINOffcLight';
+	color: #fff;
+	font-size: 1.6em;
+	text-shadow: 2px 2px 14px rgba(0, 0, 0, 1);
+	text-align: center;
 }
-.section-heading a { 
-	color: #999; 
+.section-heading a {
+	color: #999;
 }
-.section-heading a:hover { 
-	text-decoration: none; color: #333; 
+.section-heading a:hover {
+	text-decoration: none; color: #333;
 }
-#subsections { 
-	margin-top: 30px; 
-	margin-bottom: 30px; 
+#subsections {
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
-blockquote { 
-	font-family: 'DINOffcCondMedi'; 
-	padding: 25px 0 25px 0; 
-	margin: 50px 0; 
-	color: #369; 
-	font-size: 160%; 
-	line-height: 150%; 
-	border: none; 
-	border-top: 3px double #eee; 
-	border-bottom: 3px double #eee; 
+blockquote {
+	font-family: 'DINOffcCondMedi';
+	padding: 25px 0 25px 0;
+	margin: 50px 0;
+	color: #369;
+	font-size: 160%;
+	line-height: 150%;
+	border: none;
+	border-top: 3px double #eee;
+	border-bottom: 3px double #eee;
 }
-blockquote small { 
-	text-transform: none; 
-	letter-spacing: 0; 
+blockquote small {
+	text-transform: none;
+	letter-spacing: 0;
 }
-blockquote small:before { 
+blockquote small:before {
 	content: none;
 }
-#video-clip { 
-	background: #222; 
-	padding: 30px 0; 
-	color: #ccc; 
+#video-clip {
+	background: #222;
+	padding: 30px 0;
+	color: #ccc;
 }
-p.caption { 
-	margin-top: 30px; 
-	font-family: 'DINOffcCondMedi'; 
-	font-size: 120%; 
-	line-height: 150%; 
+p.caption {
+	margin-top: 30px;
+	font-family: 'DINOffcCondMedi';
+	font-size: 120%;
+	line-height: 150%;
 }
-.page-break { 
-	background: #fff; 
-	margin-top: 50px; 
-	padding: 50px 0; 
+.page-break {
+	background: #fff;
+	margin-top: 50px;
+	padding: 50px 0;
 }
-.page-break-video { 
-	background: #222; 
-	margin-top: 50px; 
+.page-break-video {
+	background: #222;
+	margin-top: 50px;
 }
-#retro { 
-	padding: 50px 0; 
+#retro {
+	padding: 50px 0;
 }
-#retro p { 
-	color: #fff; 
-	font-size: 150%; 
-	font-family: 'DINOffcCondMedi'; 
-	font-weight: 200; 
+#retro p {
+	color: #fff;
+	font-size: 150%;
+	font-family: 'DINOffcCondMedi';
+	font-weight: 200;
 }
 div.span2.section {
 	margin-bottom: 30px;
@@ -258,24 +267,24 @@ a.anchor {
 	padding: 15px 0;
 	border-bottom: 1px solid #ddd;
 }
-.tc-preview-strip h4 { 
-	color: #0083b6; 
+.tc-preview-strip h4 {
+	color: #0083b6;
 }
-.tc-preview-strip ul { 
-	margin: 0; 
+.tc-preview-strip ul {
+	margin: 0;
 }
-.tc-preview-strip h4 a { 
-	color: #fff; 
-}
-
-ol { 
-	list-style-type: decimal; 
+.tc-preview-strip h4 a {
+	color: #fff;
 }
 
-p strong, ol li strong { 
-	color: #444; 
+ol {
+	list-style-type: decimal;
 }
-#handbook-nav { 
+
+p strong, ol li strong {
+	color: #444;
+}
+#handbook-nav {
 	padding-top: 50px;
 }
 
@@ -283,9 +292,9 @@ p strong, ol li strong {
 	font-family: "DINOffc";
 }
 
-#handbook-nav li.nav-item a { 
-	color: #999; 
-	font-size: 1.1em; 
+#handbook-nav li.nav-item a {
+	color: #999;
+	font-size: 1.1em;
 	line-height: 27.104px;
 	font-size: 16.94px;
 }
@@ -298,56 +307,56 @@ p strong, ol li strong {
 	line-height: 27.5px;
 }
 
-#handbook-nav .nav-header { 
-	padding: 10px 0 5px 0; 
-	font-family: 'DINOffcCondMedi'; 
-	font-size: 1.375em; 
-	color: #999; 
-	font-weight: normal; 
-	text-transform: uppercase; 
+#handbook-nav .nav-header {
+	padding: 10px 0 5px 0;
+	font-family: 'DINOffcCondMedi';
+	font-size: 1.375em;
+	color: #999;
+	font-weight: normal;
+	text-transform: uppercase;
 	line-height: 1;
 }
-#handbook-nav .section-header { 
-	padding: 10px 0 5px 0; 
-	font-family: 'DINOffcCondMedi'; 
-	font-size: 1.5em; 
-	color: #444; 
+#handbook-nav .section-header {
+	padding: 10px 0 5px 0;
+	font-family: 'DINOffcCondMedi';
+	font-size: 1.5em;
+	color: #444;
 }
-.pane { 
-	background-color: #fff; 
-	padding: 10px; 
-	margin-top: 20px; 
-	margin-bottom: 10px; 
-	vertical-align: top; 
-	min-height: 200px; 
-	-webkit-box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, .1); 
-	box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, .1); 
-	transition: background-color 0.2s ease-in-out; 
+.pane {
+	background-color: #fff;
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	vertical-align: top;
+	min-height: 200px;
+	-webkit-box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, .1);
+	box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, .1);
+	transition: background-color 0.2s ease-in-out;
 }
-.pane h3 { 
-	color: #0083b6; 
-	margin: 0 0 5px 0; 
+.pane h3 {
+	color: #0083b6;
+	margin: 0 0 5px 0;
 }
-.pane p { 
-	color: #666; 
+.pane p {
+	color: #666;
 }
-.pane:hover { 
-	background-color: #ccc; 
+.pane:hover {
+	background-color: #ccc;
 }
-.teaching-nav.affix { 
+.teaching-nav.affix {
 	top: 100px;
 }
-.teaching-nav.affix-bottom { 
-	position: absolute; 
+.teaching-nav.affix-bottom {
+	position: absolute;
 }
-#handbook-nav li.nav-item.active a { 
-	font-weight: bold; color: #333; 
+#handbook-nav li.nav-item.active a {
+	font-weight: bold; color: #333;
 }
-#second-deck h3 { 
-	color: #333; margin-top: 15px; 
+#second-deck h3 {
+	color: #333; margin-top: 15px;
 }
-#second-deck p { 
-	color: #777; height: 100px; 
+#second-deck p {
+	color: #777; height: 100px;
 }
 h1#tc-title {
 	text-align: center;
@@ -359,36 +368,36 @@ h1#tc-title {
 	color: #fff;
 	text-shadow: 2px 2px 14px rgba(0, 0, 0, .5);
 }
-.dive { 
-	cursor: pointer; 
-	font-family: 'DINOffcMedi'; 
+.dive {
+	cursor: pointer;
+	font-family: 'DINOffcMedi';
 }
-.popover { 
-	font-family: 'DINOffcLight'; 
-	padding: 15px; 
-	background: #0083b6; 
-	color: #ccc; 
-	border: 0; 
+.popover {
+	font-family: 'DINOffcLight';
+	padding: 15px;
+	background: #0083b6;
+	color: #ccc;
+	border: 0;
 }
-.popover a { 
-	color: #fff; 
+.popover a {
+	color: #fff;
 }
-.popover.right>.arrow:after { 
-	border-right-color: #0083b6; 
+.popover.right>.arrow:after {
+	border-right-color: #0083b6;
 }
-label { 
-	display: block; 
-	font-family: 'DINOffcLight'; 
-	font-size: 1.5em; 
-	color: #666; 
-	line-height: 1.5em; 
-	margin-left: 1px; 
+label {
+	display: block;
+	font-family: 'DINOffcLight';
+	font-size: 1.5em;
+	color: #666;
+	line-height: 1.5em;
+	margin-left: 1px;
 }
-input[type=checkbox] { 
-	margin: 10px 0 0; 
+input[type=checkbox] {
+	margin: 10px 0 0;
 }
-.well p { 
-	text-transform: none; margin-bottom: 0; 
+.well p {
+	text-transform: none; margin-bottom: 0;
 }
 .dropdown-container {
 	margin: 2rem 1.5rem;
