@@ -38,3 +38,7 @@
   * The default format for the flatpage body is Markdown, however...
   * This site sets the configuation setting FLATPAGES_HTML_RENDERER to use the Jinja2 templating engine, so you can use HTML and [Jinja2 template tags](http://jinja.pocoo.org/docs/2.10/templates/) inside the flatpage body.
   * You can even mix Jinja 2 and Markdown, which is why many of the flatpages have some content in Markdown, and some in HTML.
+
+## URL Routing
+* URL routing and assigning templates to pages occurs in the file teaching.py.
+
