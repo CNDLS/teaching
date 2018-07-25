@@ -41,37 +41,6 @@ def query_db(query, args=(), one=False):
 def index():
     return render_template('index.html')
 
-'''
-@app.route('/stories/')
-def show_stories():
-    cursor = mysql.get_db().cursor()
-    cursor.execute("select title, slug from stories")
-    stories = [dict(title=row[0], slug=row[1]) for row in cursor.fetchall()]
-    return render_template('story_list.html', stories=stories)
-@app.route('/stories/<slug>')
-def show_story(slug):
-    cursor = mysql.get_db().cursor()
-    cursor.execute("select * from stories where slug = '" + slug + "'")
-    story = cursor.fetchone()
-    return render_template('story_detail.html', story=story)
-'''
-
-'''
-class ListView(MethodView):
-    def get(self):
-        res = query_db('select title, slug, tag_list from stories')
-        stories = [dict(title=row[0], slug=row[1], tag_list=row[2]) for row in res]
-        return render_template('stories/list.html', stories=stories)
-
-class DetailView(MethodView):
-    def get(self, slug):
-        row = query_db('select title, content from stories where slug = %s', [slug], one=True)
-        story = dict(title=row[0], content=row[1])
-        return render_template('stories/detail.html', story=story)
-
-app.add_url_rule('/stories/', view_func=ListView.as_view('stories'))
-app.add_url_rule('/stories/<slug>/', view_func=DetailView.as_view('story'))
-'''
 
 @app.route('/<path:path>/')
 def page(path):
