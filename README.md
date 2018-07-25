@@ -20,3 +20,21 @@
 
 ## Deployment
 * After running `python freeze.py`, copy the contents of the `/build/` directory of this repository to the server directory, using SFTP or SSH.
+
+## Editing Site Content
+* The content for this site is stored in HTML files ("flatpages") in the ./pages/ directory.
+* [Flask Flatpages Documenation](http://flask-flatpages.readthedocs.io/en/latest/)
+* Highlights
+  * Page url structure comes from the folder structure and file names relative to the ./pages/ directory. For example, ./pages/design/assesment.html results in the url http://hostname/design/assessment/.
+  * Each file is made of a YAML mapping of metadata, a blank line, and the page body, for example:
+    ```YAML
+    title: Hello
+    published: 2010-12-22
+
+    Hello, *World*!
+
+    Lorem ipsum dolor sit amet, …
+    ```
+  * The default format for the flatpage body is Markdown, however...
+  * This site sets the configuation setting FLATPAGES_HTML_RENDERER to use the Jinja2 templating engine, so you can use HTML and [Jinja2 template tags](http://jinja.pocoo.org/docs/2.10/templates/) inside the flatpage body.
+  * You can even mix Jinja 2 and Markdown, which is why many of the flatpages have some content in Markdown, and some in HTML.
