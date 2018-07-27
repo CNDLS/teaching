@@ -162,19 +162,13 @@ h6 a {
 /* Utility classes for underlined, italicized, and bold */
 .underlined {
   text-decoration: underline;
-  font-style: normal;
-  font-weight: normal;
 }
 
 .italicized {
-  text-decoration: none;
   font-style: italic;
-  font-weight: normal;
 }
 
 .bold {
-  text-decoration: none;
-  font-style: normal;
   font-weight: bold;
 }
 
