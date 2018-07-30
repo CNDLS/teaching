@@ -27,7 +27,37 @@ order: 1.0
   <li class="italicized">Provide Multiple Means of Engagement</li>
 </ul>
 
-<img src="{{ url_for('static', filename='img/UDL.png') }}" alt="Universal Design For Learning Principles" class="img-responsive">
+<img src="{{ url_for('static', filename='img/UDL.png') }}" alt="Universal Design For Learning Principles" class="img-responsive" aria-hidden="true">
+
+<table class="sr-only">
+  <caption>Universal Design for Learning - The Three Principles in Detail: Each column represents one principle</caption>
+  <tr>
+    <td >Principle #1: Provide multiple means of representation</td>
+    <td >Principle #2: Provide multiple means of action and expression</td>
+    <td >Principle #3: Provide multiple means of engagement</td>
+  </tr>
+  <tr>
+    <td>Brain Networks Activated: Recognition</td>
+    <td>Brain Networks Activated: Strategic</td>
+    <td>Brain Networks Activated: Affective</td>
+  </tr>
+  <tr>
+    <td>Key word: what. The what of learning</td>
+    <td>Key word: how. The how of learning</td>
+    <td>Key word: why. The why of learning</td>
+  </tr>
+  <tr>
+    <td>Description: How we gather facts and categorize what we see, hear, and read. Identifying letters, words, or an author's style are recognition tasks.</td>
+    <td>Description: Planning and performing tasks. How we organize and express our ideas. Writing an essay or solving a math problem are strategic tasks.</td>
+    <td>Description: How learners get engaged and stay motivated. How they are challenged, excited, or interested. These are affective dimensions.</td>
+  </tr>
+  <tr>
+    <td>The principle put another way: Principle #1: Present information and content in different ways.</td>
+    <td>The principle put another way: Principle #2: Differentiate the ways that students can express what they know.</td>
+    <td>The principle put another way: Principle #3: Stimulate interest and motivation for learning.</td>
+  </tr>
+</table>
+
 <p class="attribution">Adapted from the <a href="http://www.udlcenter.org/aboutudl/whatisudl">National UDL Center</a></p>
 
 <a href="#top" class="btn btn-info">Back to the top</a>
@@ -102,6 +132,7 @@ order: 1.0
       <li>Offering online formats: a forum for online discussion or blogging provides another space for students to participate and demonstrate comprehension.</li>
     </ul>
   <li>Use classroom technologies such as clickers (<a href="https://commons.georgetown.edu/tools/clickers/">Clickers - CNDLS technology page</a>) and Poll Everywhere (<a href="https://commons.georgetown.edu/tools/poll_everywhere/">Poll Everywhere - CNDLS technology page</a>) for engagement and/or real-time interaction and feedback.</li>
+  <li>Use classroom technologies such as <a href="https://commons.georgetown.edu/tools/clickers/" aria-label="Clickers - CNDLS technology page">clickers</a> and <a href="https://commons.georgetown.edu/tools/poll_everywhere/" aria-label="Poll Everywhere - CNDLS technology page">Poll Everywhere</a> for engagement and/or real-time interaction and feedback.</li>
   <li>Provide a bit of structure at the beginning of each class: outline key points, connect them to course objectives, and give a preview of the material to be covered in that day.</li>
   <li>Check out our <a href="{{ url_for('page', path='/teach/planning-leading') }}">Planning and Leading Class</a>, <a href="{{ url_for('page', path='/teach/technology') }}">Teaching with Technologies</a>, and <a href="{{ url_for('page', path='/teach') }}">Active Learning</a> pages for more ideas.</li>
 </ul>
