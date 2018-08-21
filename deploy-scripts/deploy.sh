@@ -44,7 +44,7 @@ ssh -v "${SERVER_USERNAME}@${SERVER}" "
   find . -type d -exec chmod 775 {} \;
   find . -type f -exec chmod 664 {} \;
 
-  echo 'Changing groups and permissions'
+  echo 'Changing group ownership'
   find . -type d -exec chown ${SERVER_USERNAME}:${SERVER_GROUP} {} \;
   find . -type f -exec chown ${SERVER_USERNAME}:${SERVER_GROUP} {} \;
 
