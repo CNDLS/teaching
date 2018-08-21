@@ -39,6 +39,7 @@
   * The default format for the flatpage body is Markdown, however...
   * This site sets the configuation setting FLATPAGES_HTML_RENDERER to use the Jinja2 templating engine, so you can use HTML and [Jinja2 template tags](http://jinja.pocoo.org/docs/2.10/templates/) inside the flatpage body.
   * You can even mix Jinja 2 and Markdown, which is why many of the flatpages have some content in Markdown, and some in HTML.
+  * As of 08/21/2018, Brian Blosser is moving to have all page bodies be in only HTML, for consistency.
 
 ## URL Routing
 * [How to define routes in Flask](http://flask.pocoo.org/docs/1.0/quickstart/#routing)
@@ -46,3 +47,5 @@
 * In this app, flatpages use a default template unless the 'template' meta key is defined in the flatpage.
 * As of this writing (07/25/2018), only two templates are being used: templates/index.html and templates/handbook/detail.html (which extends other parent templates)
 
+## Code Style
+* HTML: Use this style guide: https://github.com/CNDLS/code-standards/blob/master/html.html
