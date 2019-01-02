@@ -21,6 +21,23 @@
 * To create the static build: `python freeze.py`. This will create a directory called `build` which can then be uploaded directly to the serveer.
 * After running `python freeze.py`, copy the contents of the `/build/` directory of this repository to the server directory, using SFTP or SSH.
 * All pages in the ./pages/ directory will be built when you run Frozen Flask.
+* There is also a deploy script in /deploy-scripts/.
+* For it to work correctly, you must have a config.sh file in /deploy-scripts/ with the correct config variables.
+  * See Brian Blosser if you need a copy of config.sh.
+* To run it:
+```
+# Commit your changes
+git commit -am "My new change"
+
+# Push the change to origin
+git push origin master
+
+cd deploy-scripts
+
+# Execute the deploy script - it will ask for your server password twice
+# (once for ssh and once for rsync using ssh)
+./deploy.sh
+```
 
 ## Editing Site Content
 * The content for this site is stored in HTML files ("flatpages") in the ./pages/ directory.
