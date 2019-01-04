@@ -65,3 +65,5 @@ deploy-scripts/config\.sh
 
 # Ignore build directory
 /build/
+
+deploy-scripts/config_sh\.sh
