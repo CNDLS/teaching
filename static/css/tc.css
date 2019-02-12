@@ -144,10 +144,14 @@ a {
 	color: #0082B8;
 }
 
-/* Underline all links in a paragraph and in lists */
+/* Underline all links in a paragraph, in lists, and in some headings */
 p a,
 ul a,
-ol a {
+ol a,
+h2 a,
+h3 a,
+h4 a,
+h5 a {
 	text-decoration: underline;
 }
 
