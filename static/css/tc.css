@@ -144,6 +144,24 @@ a {
 	color: #0082B8;
 }
 
+/* Underline all links in a paragraph and in lists */
+p a,
+ul a,
+ol a {
+	text-decoration: underline;
+}
+
+/* Do not underline button links */
+a.btn {
+	text-decoration: none;
+}
+
+/* Do not underline links in navigation or footer */
+nav a,
+#subfooter a {
+	text-decoration: none;
+}
+
 strong {
   font-family: "DINOffcBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
